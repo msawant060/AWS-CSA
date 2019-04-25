@@ -9,3 +9,10 @@
 3. Each Region has multiple (2 or more), isolated locations known as Availability Zones (AZ).
 4. Each Availability Zone is isolated, but the Availability Zones in a Region are connected through low-latency links.
 
+### Available Region
+
+1. Your AWS account determines the Regions that are available to you
+   - An AWS account provides multiple Regions so that you can launch Amazon EC2 instances in locations that meet your requirements. 
+   - Ex: You might want to launch instances in Europe to be closer to your European customers or to meet legal requirements.
+2. An AWS GovCloud (US-West) account provides access to the AWS GovCloud (US-West) Region only
+3. An Amazon AWS (China) account provides access to the Beijing and Ningxia Regions only.
