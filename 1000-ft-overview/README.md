@@ -18,7 +18,12 @@
 3. An Amazon AWS (China) account provides access to the Beijing and Ningxia Regions only.
 
 ### Availability Zones (AZ)
+
 1. AWS Availability Zones are one or more discrete data centers.
 2. Each with redundant power, networking and connectivity housed in separate facilities. 
 3. Deploying your application across multiple Availability Zones is useful for redundancy, low latency and fault tolerance.
 
+### Edge Locations
+1. AWS Edge Locations are locations around the world meant for caching content, enhancing the user experience, reducing latency. 
+2. Edge locations are specifically used by AWS Cloudfront and AWS CDN. 
+3. Every Region is has its own set Availability Zone's and Edge Locations.
