@@ -1,4 +1,4 @@
-## Part 2. AWS Services Overview
+## Part 2. AWS Services Overview [Compute]
 
 ### Compute
 
