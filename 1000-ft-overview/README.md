@@ -1,1 +1,1 @@
-Regions and Availability Zones
+Part 1. Regions, Availability Zones (AZ), Edge Locations
