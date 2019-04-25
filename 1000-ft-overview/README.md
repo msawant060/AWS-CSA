@@ -16,3 +16,9 @@
    - Ex: You might want to launch instances in Europe to be closer to your European customers or to meet legal requirements.
 2. An AWS GovCloud (US-West) account provides access to the AWS GovCloud (US-West) Region only
 3. An Amazon AWS (China) account provides access to the Beijing and Ningxia Regions only.
+
+### Availability Zones (AZ)
+1. AWS Availability Zones are one or more discrete data centers
+2, Each with redundant power, networking and connectivity housed in separate facilities. 
+3. Deploying your application across multiple Availability Zones is useful for redundancy, low latency and fault tolerance.
+
