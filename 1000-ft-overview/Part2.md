@@ -15,26 +15,26 @@ A variety of products and services that provide scalable computing capacity in c
    - Comnine Amazon EC2 and EC2 Auto Scaling, you can create a high available architecture. 
    
 3. AWS Lambda
-  - AWS lambda allows you to run code without provisioning or managing any servers or infrastructure.
-  - This code can be a back-end service, trigger this function in event triggers, and so on.
+   - AWS lambda allows you to run code without provisioning or managing any servers or infrastructure.
+   - This code can be a back-end service, trigger this function in event triggers, and so on.
  
 4. Amazon EC2 Container Service (ECS)
-  - It allows you to run Docker containers on Amazon EC2 instances.
-  - Amazon ECS integrates with ELB, and Amazon EBS.
+   - It allows you to run Docker containers on Amazon EC2 instances.
+   - Amazon ECS integrates with ELB, and Amazon EBS.
 
 5. Amazon Elastic Beanstalk
-  - It lets you run and manage web applications without worriying about the underlining infrastructure 
-  - You can use Amazon ECS to deploy web applications with Java, .NET, PHP, Node.js, Python, Ruby, Go, and Docker on servers such as Apache, Nginx, and so on..
+   - It lets you run and manage web applications without worriying about the underlining infrastructure 
+   - You can use Amazon ECS to deploy web applications with Java, .NET, PHP, Node.js, Python, Ruby, Go, and Docker on servers such as Apache, Nginx, and so on..
   
 6. Amazon Lightsail
-  - This is the simplest way to get started with AWS for small businesses, developers, students, and others who need a simple virtual private server (VPS) solution.
-  - It provides:
+   - This is the simplest way to get started with AWS for small businesses, developers, students, and others who need a simple virtual private server (VPS) solution.
+   - It provides:
     - Storage, networking capacity, compute capabilities 
-  - It includes:
+   - It includes:
     - Virtualized computer server, DNS management, SSD-based storage, static IP address, and data transfer cpabilities. 
-   - Preditable monthly price
+    - Preditable monthly price
 
 7. AWS Batch
-  - It enables users to efficently run hundreds of thousands of batch computing jobs on AWS. 
+   - It enables users to efficently run hundreds of thousands of batch computing jobs on AWS. 
   
 
