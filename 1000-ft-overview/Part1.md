@@ -1,6 +1,4 @@
-# 1,000 ft Overview
-
-## Part 1. Regions, Availability Zones (AZ), Edge Locations
+# Regions, Availability Zones (AZ), Edge Locations
 
 ### Region
 
