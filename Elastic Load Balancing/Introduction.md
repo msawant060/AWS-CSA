@@ -24,7 +24,7 @@
  
 ## Types of Elastic Load Balancers (ELB)
  
- ### 1. Classic Load Balancer (CLB)
+### 1. Classic Load Balancer (CLB)
   
   -  This is the previous generation load balancer that was used for EC2-classic instances.
   -  It operates on both the request level and the connection level. 
@@ -32,7 +32,7 @@
   -  Once configured, it distributes the load across all the registered instances regardless of what is present on the servers.
   -  Hence, it can only be used to distribute traffic to a single URL.
   
-### 2. Application Load Balancer (ALB)
+ ### 2. Application Load Balancer (ALB)
     
    - This load balancer is specially designed for web applications with HTTP and HTTPS traffic.
    - There is a networking model called the OSI Model (Open Systems Interconnection) that is used to explain how computer networks work. 
@@ -58,6 +58,12 @@
    - Using ALB you can route traffic based on the path of the requested URL.
    - So again a single ALB is enough to handle this for you.
      
-     
+### 3. Network Load Balancer (NLB)
   
-    
+   - This load balancer operates at the Network layer of the OSI model, hence the name.
+   - Suppose your company’s website is running on four m4-xlarge instances and you are using an ALB to distribute the traffic among them.
+   - Now your company launched a new product today which got viral and your website starts to get millions of requests per second.
+   - In this case, the ALB may not be able to handle the sudden spike in traffic.
+   - This is where the NLB really shines. It has the capability to handle a sudden spike in traffic since it works at the connection level.
+   - It also provides support for static IPs.
+   
