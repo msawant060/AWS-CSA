@@ -59,7 +59,7 @@
    - So again a single ALB is enough to handle this for you.
      
 ### 3. Network Load Balancer (NLB)
-  
+   - This load balancer is specially designed for TCP/IP traffic.
    - This load balancer operates at the Network layer of the OSI model, hence the name.
    - Suppose your company’s website is running on four m4-xlarge instances and you are using an ALB to distribute the traffic among them.
    - Now your company launched a new product today which got viral and your website starts to get millions of requests per second.
