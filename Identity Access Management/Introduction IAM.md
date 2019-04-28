@@ -30,3 +30,6 @@
 
  - The “root account” is simply the account created when you first setup your AWS account. 
  - It has complete Admin access.
+ - New Users have NO permissions when first created 
+ - New users are assign Access Key ID & Secret Access Keys when first created. (Note these are not the same as a password. You only get to view these once) 
+
