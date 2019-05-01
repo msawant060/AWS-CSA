@@ -17,3 +17,4 @@
  * You can leverage multiple layers of security,
    - including security groups and network access control lists, to help control access to EC2 instances on each subnet.
  
+#### NOTE: Private and public subnets within a VPC can only have ONE subnet per AZ
