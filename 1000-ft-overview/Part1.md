@@ -25,3 +25,17 @@
 1. AWS Edge Locations are locations around the world meant for caching content, enhancing the user experience, reducing latency. 
 2. Edge locations are specifically used by AWS Cloudfront and AWS CDN. 
 3. Every Region is has its own set Availability Zone's and Edge Locations.
+
+| AZ | Regional | Global|
+|----|----------|--------|
+| EC2 Instances | S3 Bucket | IAM Entities (User,Group,Roles,Policies|
+| EBS Volume| AMI | Route 53|
+| RDS instance| Snapshot (EBS/RDS) | Cloud Front Distribution
+| Redshift Node | DynamoDB | |
+| Subnets | VPC | | 
+| Elastic File System | Elastic IP | |
+| | SQS, SNS | | 
+| | Cloud Watch Matrix | | 
+
+
+
