@@ -37,10 +37,10 @@
    - It supports IP4 and IP6 traffic
  
 * Network Address Transaltion
- - You have a database inside the private subnet. And noone from outside internet can access this instance. 
- - However, if you need to download the latest path for this private subnet database server, you need to access internet from server to outside. However, outsiders can't access the private subnet. This functionality is done via NAT. 
- - ** NOTE: NAT devices can be used only for IP4 and IP6 doesn't support it **
- - There are 2 types of NAT devices available in AWS:
-    - NAT Instances 
-    - NAT GateWays
+  - You have a database inside the private subnet. And noone from outside internet can access this instance. 
+  - However, if you need to download the latest path for this private subnet database server, you need to access internet from server to outside. However, outsiders can't access the private subnet. This functionality is done via NAT. 
+  - ** NOTE: NAT devices can be used only for IP4 and IP6 doesn't support it **
+  - There are 2 types of NAT devices available in AWS:
+      - NAT Instances 
+      - NAT GateWays
     
