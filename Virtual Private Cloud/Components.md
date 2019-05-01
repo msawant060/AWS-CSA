@@ -62,3 +62,14 @@
   - Having one NAT Gateway in one AZ is not good enough, must me redundant in multiple AZs
   - No need to patch OS
   - Not associated with security groups
+ 
+ * Network Access Control Lists (NACL)
+   - An NACL is a layer of security that acts as a firewall at the subnet level.
+   - Your VPC automatically comes with a default NACL, and by default it allows all inbound and outbound and traffic.
+   - By default, each custom NACL denies all inbound and outbound traffic until you add rules. 
+   - Each subnet in your VPC must be associated with a network ACL. 
+   - If you dont explicitly associate a subnet with a network ACL, the subnet is automatically associated with the default NACL.
+   - You can associate a NACL with multiple subnets; 
+   - However, A subnet can be associated with only ONE network ACL at a time. When you associate a NACL with a subnet, the previous association is removed.
+   - NACLs contain a numbered list of rules that is evaluated in order, starting with the lowest numbered rule
+   - **NACL are stateless; responses to allowed inbound traffic are subject to the rules for outbund traffic**
