@@ -19,3 +19,21 @@
   - **Subnets are AZ specific. For mutiple AZs, create mutiple subnets** 
   - **Of course, YOU CAN'T HAVE (more than one subnet) subnets within a single AZ.**
   - **VPC are region specific. For mutiple regions,, create different VPCs.**
+
+* Route Table
+ - It's a table consisting of certain rules known as routes, that determines where the traffic is directed. 
+ - Every subnet should have a route table. 
+ - More than one subnet can have a same route table. 
+ - Whenever you create a subnet, it assosiated with a main route table, when you don't assosiated with the specific route table. 
+ - Route table has 2 columns. (Destination and Target)
+    - Target: this is where the traffic is direted to
+    - Destination: It specify the IP range that can be directed to target. 
+  - |Destination| Target|
+  - |10.0.0.0/0 |  nat-gateway-112a01|
+  
+  * Internet Gateway
+   - This is a component of VPC that allows your VPC to communicate with the Internet. 
+   - IG is horizontally scaled, redundant,and highly available components in VPC. 
+   - It supports IP4 and IP6 traffic
+ 
+
