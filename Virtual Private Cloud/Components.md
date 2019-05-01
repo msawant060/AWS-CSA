@@ -51,4 +51,14 @@
   - The amount of traffic that NAT instances can support depends on the instance size. If you are bottlenecking, increase the instance size.
   - Behind a Security Group.
   - You can create high availability using Autoscaling Groups, multiple subnets in different AZs, and a script to automate failover.
-* 
+
+* NAT Gateways
+  - No need to Disable Source/Destination Checks on the instance
+  - Automatically assigned public IP
+  - Must update root tables and point them to NAT Gateway
+  - Preferred by the enterprise
+  - Scale automatically up to 10G
+  - More Secure than NAT Instance
+  - Having one NAT Gateway in one AZ is not good enough, must me redundant in multiple AZs
+  - No need to patch OS
+  - Not associated with security groups
