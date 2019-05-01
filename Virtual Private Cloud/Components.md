@@ -1,5 +1,4 @@
 * Amazon VPC
-
   - VPC gives you your OWN Private space in cloud
   - The First Step of creating VPC is deciding the IP Range by providing a Classless Inter Domain Routing (CIDR) block
   - VPC now supports IP4 and IP6.
@@ -8,19 +7,15 @@
   - When you choose IP6
       - CIDR block is fixed /56.
   - Within a VPC, you have a ll the AZs that are part of the regions where the VPC blongs. 
-  
-  ##### Once you create a VPC, you can't alreat the IP addresses. 
-  ##### VPC is limited to a region. You CAN NOT HAVE A VPC SPANNING REGIONS.
-
+  - **Once you create a VPC, you can't alreat the IP addresses.** 
+  - **VPC is limited to a region. You CAN NOT HAVE A VPC SPANNING REGIONS.**
   
 * Subnet
-
   - It's short for subnetwork, which logical sub divison of IP network
   - Using subnets you can divide a network into multiple networks
   - Public subnet: this is used for the resources that needs internet access
   - Private subnet: this is used for the resources that DO NOT needs internet access
   - VPN-Only subnet: this is used when you want to connect your virtual private cloud with your coporate data center.
-  
-  ##### Subnets are AZ specific. For mutiple AZs, create mutiple subnets 
-  ##### Of course, YOU CAN'T HAVE (more than one subnet) subnets within a single AZ.
-  ##### VPC are region specific. For mutiple regions,, create different VPCs.
+  - **Subnets are AZ specific. For mutiple AZs, create mutiple subnets** 
+  - **Of course, YOU CAN'T HAVE (more than one subnet) subnets within a single AZ.**
+  - **VPC are region specific. For mutiple regions,, create different VPCs.**
