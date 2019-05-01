@@ -21,12 +21,10 @@
 
 * How to calculate the available Total IP address based on CIDR block
 ----------------------------------------------------------------------
- - 10.0.0.0/26
- 
- - How many total IP addresses for the above? 
- - 2 ^ (32 - 26) = 2 ^ 6 = 64 IP addresses
- - Start would be 10.0.0.0
- - End would be 10.0.0.63
+ - How many total IP addresses for the the following CIDR block: 10.0.0.0/26  
+    - 2 ^ (32 - 26) = 2 ^ 6 = 64 IP addresses
+    - First IP: 10.0.0.0
+    - Last IP:   10.0.0.63
  
  * How to divide the above 64 IP address in 4 blocks.
  
