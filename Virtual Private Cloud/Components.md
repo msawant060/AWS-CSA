@@ -10,4 +10,12 @@
   - ##### VPC is limited to a region. You CAN NOT HAVE A VPC SPANNING REGIONS.
   - Within a VPC, you have a ll the AZs that are part of the regions where the VPC blongs. 
   
-  
+* Subnet
+  - It's short for subnetwork, which logical sub divison of IP network
+  - Using subnets you can divide a network into multiple networks
+  - Public subnet: this is used for the resources that needs internet access
+  - Private subnet: this is used for the resources that DO NOT needs internet access
+  - VPN-Only subnet: this is used when you want to connect your virtual private cloud with your coporate data center.
+  - #### Subnets are AZ specific. For mutiple AZs, create mutiple subnets 
+  - #### Of course, YOU CAN'T HAVE (more than one subnet) subnets within a single AZ.
+  - #### VPC are region specific. For mutiple regions,, create different VPCs.
