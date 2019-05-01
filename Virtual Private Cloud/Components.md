@@ -6,7 +6,6 @@
       - CIDR range is would be /16 (65, 536) to /28 (16 IP)
   - When you choose IP6
       - CIDR block is fixed /56.
-   
   - ##### Once you create a VPC, you can't alreat the IP addresses. 
   - ##### VPC is limited to a region. You CAN NOT HAVE A VPC SPANNING REGIONS.
   - Within a VPC, you have a ll the AZs that are part of the regions where the VPC blongs. 
