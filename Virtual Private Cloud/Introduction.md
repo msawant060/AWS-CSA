@@ -19,7 +19,7 @@
  
 #### NOTE: Private and public subnets within a VPC can only have ONE subnet per AZ
 
-* How to calculate the available Total IP address based on CIDR block
+How to calculate the available Total IP address based on CIDR block
 ----------------------------------------------------------------------
  - How many total IP addresses for the the following CIDR block: 10.0.0.0/26  
     - 2 ^ (32 - 26) = 2 ^ 6 = 64 IP addresses
