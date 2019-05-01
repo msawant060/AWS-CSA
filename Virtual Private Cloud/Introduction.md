@@ -35,9 +35,9 @@
  - Block 2: 10.0.0.16/28 (2 ^ (32 - 28) = 2 ^ 4 =  Total 16 IPs)
    - IP Address Range: 10.0.0.16 to 10.0.0.31 
  - Block 3: 10.0.0.32/28 (2 ^ (32 - 28) = 2 ^ 4 = 16 IPs)
-  - IP Address Range: 10.0.0.32 to 10.0.0.47 
+   - IP Address Range: 10.0.0.32 to 10.0.0.47 
  - Block 4: 10.0.0.48/28 (2 ^ (32 - 28) = 2 ^ 4 = 16 IPs)
-  - IP Address Range: 10.0.0.48 to 10.0.0.63 
+   - IP Address Range: 10.0.0.48 to 10.0.0.63 
   
   ### NOTE: In AWS Each Subnet mask will take 5 IP address for private usage. (First 4 and the last one will be gone) 
   
