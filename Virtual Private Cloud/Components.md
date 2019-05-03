@@ -65,6 +65,15 @@
   - No need to patch OS
   - Not associated with security groups
  
+ * Egress-Only Internet Gateway
+   - Simalar to NAT Gateway, this is a component of your VPC allows Amazon VPC to communicate with the Internet for **IPv6 traffic**.  
+   - NOTE: This is **outbound** ONLY. 
+        - It prevents internet IPv6 connection to your instance. Only your instance can connect outside world.
+   - The main difference between this and NAT Gateway is:
+        - This is one is for IPv6
+        - and NAT Gateways are for IPv4
+        
+        
  * Network Access Control Lists (NACL)
    - An NACL is a layer of security that acts as a firewall at the **SUBNET LEVEL**.
    - **NACL are stateless; 
@@ -77,8 +86,7 @@
    - However, A subnet can be associated with only ONE network ACL at a time. When you associate a NACL with a subnet, the previous association is removed.
    - NACLs contain a numbered list of rules that is evaluated in order, starting with the lowest numbered rule
    
-   
-   
+
    
  
  * Questions 
