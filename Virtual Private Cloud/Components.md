@@ -28,8 +28,10 @@
   - Route table has 2 columns. (Destination and Target)
      - Target: this is where the traffic is direted to
      - Destination: It specify the IP range that can be directed to target. 
-| Destination | | Target|
-| 10.0.0.0/0  |  | nat-gateway-112a01|
+     
+  | Destination | Target|
+  |-------------|-------|
+  | 10.0.0.0/0  |  nat-gateway-112a01|
   
 * Internet Gateway
    - This is a component of VPC that allows your VPC to communicate with the Internet. 
