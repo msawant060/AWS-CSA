@@ -6,7 +6,7 @@
       - CIDR range is would be /16 (65, 536) to /28 (16 IP)
   - When you choose IP6
       - CIDR block is fixed /56.
-  - Within a VPC, you have a ll the AZs that are part of the regions where the VPC blongs. 
+  - Within a VPC, you have all the AZs that are part of the regions where the VPC blongs. 
   - **Once you create a VPC, you can't alreat the IP addresses.** 
   - **VPC is limited to a region. You CAN NOT HAVE A VPC SPANNING REGIONS.**
   
@@ -64,7 +64,9 @@
   - Not associated with security groups
  
  * Network Access Control Lists (NACL)
-   - An NACL is a layer of security that acts as a firewall at the **subnet level**.
+   - An NACL is a layer of security that acts as a firewall at the **SUBNET LEVEL**.
+   - **NACL are stateless; 
+      - if a port open for inbound traffic, the corresponding output traffic is not enables automatically.      
    - Your VPC automatically comes with a default NACL, and by default it allows all inbound and outbound and traffic.
    - By default, each custom NACL denies all inbound and outbound traffic until you add rules. 
    - Each subnet in your VPC must be associated with a network ACL. 
@@ -72,4 +74,4 @@
    - You can associate a NACL with multiple subnets; 
    - However, A subnet can be associated with only ONE network ACL at a time. When you associate a NACL with a subnet, the previous association is removed.
    - NACLs contain a numbered list of rules that is evaluated in order, starting with the lowest numbered rule
-   - **NACL are stateless; responses to allowed inbound traffic are subject to the rules for outbund traffic**
+   
