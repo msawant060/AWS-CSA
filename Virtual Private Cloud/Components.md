@@ -74,7 +74,7 @@
         - and NAT Gateways are for IPv4
                 
 * Network Access Control Lists (NACL)
-   - An NACL is a layer of security that acts as a firewall at the **SUBNET LEVEL**.
+   - An NACL is a layer of security that acts as a firewall at the **SUBNET LEVEL** in VPC.
    - **NACL are stateless; 
       - if a port open for inbound traffic, the corresponding output traffic is not enables automatically.      
    - Your VPC automatically comes with a default NACL, and by default it allows all inbound and outbound and traffic.
@@ -86,14 +86,28 @@
    - NACLs contain a numbered list of rules that is evaluated in order, starting with the lowest numbered rule
 
 * Security Group
-  
-
+  - A Security Group is a layer of security that acts as a firewall at the **INSTANCE LEVEL** in  a VPC.
+  - **Security Groups are stateful; 
+      - if a port open for inbound traffic, the corresponding output traffic IS enables automatically.
+      - ex: if you allow incoming traffic via SSH on port 22, the outgoing traffic via SSH on port 22 will be allowed.
+  - You can attach upto 5 security group for an instance
+  - By Default Security Group:
+      - All Outbound traffic is ALLOWED
+      - NO Inbound traffic is ALLOWED.
+   - There are no deny rules in Security Groups. The ONLY way to deny something is NOT ALLOWING.
    
  
 * Questions 
  
    1. What is the difference between Security Group and NACL?
-   
+  
+  | Security Group | NACL|
+  |-------------|-------|
+  | Instance Level  |  Subnet Level|
+  | Stateful | Stateless |
+  | Supports ONLY ALLOW rules| Supports ALLOW and DENY Rules|
+  
+  
    2. What is the difference between NAT Instance and NAT Gateway?
    
    
