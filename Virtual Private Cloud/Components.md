@@ -110,7 +110,15 @@
             - Instance A - VPCA connected with Intance C - VPCC
             - NW, Instance B and Instance C can't connec based on the existing connection. You need to create a VPC between B, and C to              make a communication.
       
-      
+ * Amazon VPC EndPoint
+   - There are many services of AWS that run outside VPC. 
+   - For example, S3 is regional service that doesn't run inside the VPC. 
+   - Now, if you want to connect to S3 using the VPC either via Internet or your corporate network!!!
+        - Here is where we need **VPC End POINT*
+    - VPC Endpoint gives you the ability to connect to VPC to S3 directly using private connection.
+    - Currently VPC Endpoint supports **S3 and DynamoDB**
+    - It's a virtual device scale horizontally and it redundant, providing high availability. 
+        
  
 * Questions 
  
