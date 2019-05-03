@@ -97,13 +97,13 @@
    - There are no deny rules in Security Groups. The ONLY way to deny something is NOT ALLOWING.
    
  * AMAZON VPC Peering
-  - It helps to connect one virtual private cloud to another 
-  - and route the traffic across the vitual private clouds using IPv4 or IPv6 addresses
-  - Once the VPC Perring is estabilished the instance running on both VPCs communicate with each other as if they were in the same           network.
-  - You CAN NOT peer VPCs across regions.
-  - You CAN peer VPCs from different AWS accounts 
-  - VPC peering connection is a one to one relationship between two VPCs. 
-  - You can create multiple VPC peering connections for each VPC that you own. However, **Transitive Peering is NOT SUPPORTED**
+   - It helps to connect one virtual private cloud to another 
+   - and route the traffic across the vitual private clouds using IPv4 or IPv6 addresses
+   - Once the VPC Perring is estabilished the instance running on both VPCs communicate with each other as if they were in the same           network.
+   - You CAN NOT peer VPCs across regions.
+   - You CAN peer VPCs from different AWS accounts 
+   - VPC peering connection is a one to one relationship between two VPCs. 
+   - You can create multiple VPC peering connections for each VPC that you own. However, **Transitive Peering is NOT SUPPORTED**
       - What is Transitive Peering
       - EX: 
             - Instance A - VPCA connected with Intance B - VPCB
@@ -111,13 +111,13 @@
             - NW, Instance B and Instance C can't connec based on the existing connection. You need to create a VPC between B, and C to              make a communication.
       
  * Amazon VPC EndPoint
-   - There are many services of AWS that run outside VPC. 
-   - For example, S3 is regional service that doesn't run inside the VPC. 
-   - Now, if you want to connect to S3 using the VPC either via Internet or your corporate network!!!
+    - There are many services of AWS that run outside VPC. 
+    - For example, S3 is regional service that doesn't run inside the VPC. 
+    - Now, if you want to connect to S3 using the VPC either via Internet or your corporate network!!!
         - Here is where we need **VPC End POINT*
-    - VPC Endpoint gives you the ability to connect to VPC to S3 directly using private connection.
-    - Currently VPC Endpoint supports **S3 and DynamoDB**
-    - It's a virtual device scale horizontally and it redundant, providing high availability. 
+     - VPC Endpoint gives you the ability to connect to VPC to S3 directly using private connection.
+     - Currently VPC Endpoint supports **S3 and DynamoDB**
+     - It's a virtual device scale horizontally and it redundant, providing high availability. 
         
  
 * Questions 
