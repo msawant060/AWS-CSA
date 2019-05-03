@@ -96,6 +96,21 @@
       - NO Inbound traffic is ALLOWED.
    - There are no deny rules in Security Groups. The ONLY way to deny something is NOT ALLOWING.
    
+ * AMAZON VPC Peering
+  - It helps to connect one virtual private cloud to another 
+  - and route the traffic across the vitual private clouds using IPv4 or IPv6 addresses
+  - Once the VPC Perring is estabilished the instance running on both VPCs communicate with each other as if they were in the same           network.
+  - You CAN NOT peer VPCs across regions.
+  - You CAN peer VPCs from different AWS accounts 
+  - VPC peering connection is a one to one relationship between two VPCs. 
+  - You can create multiple VPC peering connections for each VPC that you own. However, **Transitive Peering is NOT SUPPORTED**
+      - What is Transitive Peering
+      - EX: 
+            - Instance A - VPCA connected with Intance B - VPCB
+            - Instance A - VPCA connected with Intance C - VPCC
+            - NW, Instance B and Instance C can't connec based on the existing connection. You need to create a VPC between B, and C to              make a communication.
+      
+      
  
 * Questions 
  
