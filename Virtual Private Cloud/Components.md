@@ -64,7 +64,7 @@
   - Not associated with security groups
  
  * Network Access Control Lists (NACL)
-   - An NACL is a layer of security that acts as a firewall at the subnet level.
+   - An NACL is a layer of security that acts as a firewall at the **subnet level**.
    - Your VPC automatically comes with a default NACL, and by default it allows all inbound and outbound and traffic.
    - By default, each custom NACL denies all inbound and outbound traffic until you add rules. 
    - Each subnet in your VPC must be associated with a network ACL. 
