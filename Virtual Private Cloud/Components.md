@@ -50,7 +50,7 @@
   - When creating a NAT instance,**Need to** Disable Source/Destination Check on the instance.
   - NAT instances must be in a public subnet
   - There must be a route out of the private subnet to the NAT, in order for this to work.
-  - The amount of traffic that NAT instances can support depends on the instance size. If you are bottlenecking, increase the instance size.
+  - The amount of traffic that NAT instances can support depends on the instance size. If you are bottlenecking, increase the instance       size.
   - Behind a Security Group.
   - You can create high availability using Autoscaling Groups, multiple subnets in different AZs, and a script to automate failover.
 
@@ -65,16 +65,15 @@
   - No need to patch OS
   - Not associated with security groups
  
- * Egress-Only Internet Gateway
+* Egress-Only Internet Gateway
    - Simalar to NAT Gateway, this is a component of your VPC allows Amazon VPC to communicate with the Internet for **IPv6 traffic**.  
    - NOTE: This is **outbound** ONLY. 
         - It prevents internet IPv6 connection to your instance. Only your instance can connect outside world.
    - The main difference between this and NAT Gateway is:
         - This is one is for IPv6
         - and NAT Gateways are for IPv4
-        
-        
- * Network Access Control Lists (NACL)
+                
+* Network Access Control Lists (NACL)
    - An NACL is a layer of security that acts as a firewall at the **SUBNET LEVEL**.
    - **NACL are stateless; 
       - if a port open for inbound traffic, the corresponding output traffic is not enables automatically.      
@@ -85,11 +84,13 @@
    - You can associate a NACL with multiple subnets; 
    - However, A subnet can be associated with only ONE network ACL at a time. When you associate a NACL with a subnet, the previous association is removed.
    - NACLs contain a numbered list of rules that is evaluated in order, starting with the lowest numbered rule
-   
+
+* Security Group
+  
 
    
  
- * Questions 
+* Questions 
  
    1. What is the difference between Security Group and NACL?
    
