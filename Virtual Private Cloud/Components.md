@@ -80,8 +80,9 @@
    
    
    
-   
-   * Questions 
+ 
+ * Questions 
+ 
    1. What is the difference between Security Group and NACL?
    
    2. What is the difference between NAT Instance and NAT Gateway?
