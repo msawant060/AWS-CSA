@@ -100,7 +100,7 @@
    - It helps to connect one virtual private cloud to another 
    - and route the traffic across the vitual private clouds using IPv4 or IPv6 addresses
    - Once the VPC Perring is estabilished the instance running on both VPCs communicate with each other as if they were in the same           network.
-   - You CAN NOT peer VPCs across regions.
+   - NOW **You CAN peer VPCs across regions.**
    - You CAN peer VPCs from different AWS accounts 
    - VPC peering connection is a one to one relationship between two VPCs. 
    - You can create multiple VPC peering connections for each VPC that you own. However, **Transitive Peering is NOT SUPPORTED**
