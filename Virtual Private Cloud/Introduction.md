@@ -29,7 +29,7 @@ How to calculate the available Total IP address based on CIDR block
  * How to divide the above 64 IP address in 4 blocks.
  
  - Block 1: 10.0.0.0/28  (2 ^ (32 - 28) = 2 ^ 4 = Total 16 IPs)
-   - IP Address Range: 10.0.0.0 to 10.0.0.16
+   - IP Address Range: 10.0.0.0 to 10.0.0.15
  - Block 2: 10.0.0.16/28 (2 ^ (32 - 28) = 2 ^ 4 =  Total 16 IPs)
    - IP Address Range: 10.0.0.16 to 10.0.0.31 
  - Block 3: 10.0.0.32/28 (2 ^ (32 - 28) = 2 ^ 4 = 16 IPs)
