@@ -1,9 +1,11 @@
 # IAM - Identity Access Management
 
 ## What is IAM?
-
+- It's a web service that enables you to manage the access to AWS services and resource **securely**
+- It helps you to control who is authenticated and authorized to use these services and resources.
+- Service usage is **FREE**
 - Allow you to manage users and their level of access management to the AWS console. 
-- IAM is globally available and not specified to region
+- IAM is **globally available and NOT specified to region**
 - IAM is universal 
 
 ## What can you do with IAM?
