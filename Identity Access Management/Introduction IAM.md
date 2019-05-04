@@ -22,11 +22,11 @@
 - Supports PCI, DSS compliance
 
 ## Terminologies
-
- - Users : End users such as people, employees of an organization.
- - Groups: A collection of users. Each user in the group will inherit the permissions of the group
- - Policies: Policies are made up of documents, called policy documents. These documents are in a format called JSON and they give permissions as to what a User/Group/Role is able to do
- - Roles: You create roles and then assign them to AWS resource 
+ - Resources : Codebase, Servers, Legal Documents, Finacial Documentation 
+ - IAM Uusers : End users such as people, employees of an organization. (Eg: Bob - the programmer, Stacey - the infratructure enginer)
+ - IAM Groups: A collection of users. Each user in the group will inherit the permissions of the group. (Eg: Software Professionals,        Finacial Experts)
+ - IAM Rols: You create roles and then assign them to AWS resource (eg: Programmer, Infrastructure engineer)
+ - Policies: Policies are made up of documents, called policy documents. These documents are in a format called JSON and they give          permissions as to what a User/Group/Role is able to do
 
 ## Important Points
 
