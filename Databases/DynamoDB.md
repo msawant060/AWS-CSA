@@ -1,0 +1,18 @@
+# DynamoDB
+
+* What is DynamoDB?
+   - It is Fully managed, mutil-master NoSQL database service
+   - It provides 
+      - Fast Predictable Performance
+      - Consistent single-digit millisecond latency 
+      - Seamless scalability / High Scalability 
+ * Why use DynamoDB?
+   - Fully Managed by AWS
+   - Performance at Scale: Delivers consistent, single-digit millisecond responsivess at any scale 
+   - Distributed: Scales Horizontally by expanding a single table over mutiple server
+   - In-memory cache: Reduces responsive time from milliseconds to microseconds, wihtout any app changes.
+   - Fast Access: Provides fast access to local data by replicating tables across mutiple AWS Regions. 
+   - Security 
+    
+  * Components 
+    - 
