@@ -38,3 +38,21 @@
  
  **If a policy include mutiple statements. AWS applies a "Logical OR" accross the statements at evaluation time**
  
+ ## Conflicting Permissions
+ 
+ * When IAM policy has contracdicting permissions what would happen?
+ * One policy allow S# bucket access while the other policy is not? 
+ * the problem would be resolved based on **Polcy Evaluation Logic**
+ 
+ ### Policy Evaluation Logic 
+ 
+ * If a polcy doesn't mention allow/deny is always deny (**Defauly Deny**)
+ * If there is an explicit deny then **Always Deny** - Explict Deny
+ * If there is an explicit allow then **Allow** - Explict Allow
+ * If there is an explicit **Allow* and explict **Deny" then **Deny**
+ 
+ * All requests are Denied by Default
+ * An Explicit Allow over write the Defauly Deny 
+ * But, Explict Deny over write the Explict Allow
+ 
+ 
