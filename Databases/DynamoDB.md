@@ -15,4 +15,17 @@
    - Security 
     
   * Components 
-    - 
+    - Table
+         - Collection of Data
+         - Each table contains 0 or more data
+    - Item
+         - Collection of attributes that is uniquely identifiable among all of the other items.
+         - Each item composed of one or more attributes 
+     - Attribute
+         - A fundamental data element, something that does not need to be broken down any further.
+       
+    
+    ![Items.PNG](/Items.PNG)
+    
+    
+      
