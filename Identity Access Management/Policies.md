@@ -36,3 +36,5 @@
  
  ![policy.PNG](/policy.PNG)
  
+ **If a policy include mutiple statements. AWS applies a "Logical OR" accross the statements at evaluation time**
+ 
