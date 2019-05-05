@@ -23,7 +23,11 @@
          - Each item composed of one or more attributes 
      - Attribute
          - A fundamental data element, something that does not need to be broken down any further.
+     - Allowed data types
+         - String, Number, Binary
+         - No restrictions of 
            
     ![Items.PNG](/Items.PNG)
     
     ![Attributes.PNG](/Attributes.PNG)
+    
