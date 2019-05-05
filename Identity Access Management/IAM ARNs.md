@@ -19,4 +19,8 @@
      
  * Another user with a path reflecting an organization chart:
      - arn:aws:iam::123456789012:user/division_abc/sub_division/Bob
+ 
+  * An IAM in the account
+     - arn:aws:iam::912489811600:user/Teva
+  
   
