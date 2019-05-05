@@ -25,7 +25,7 @@
          - A fundamental data element, something that does not need to be broken down any further.
      - Allowed data types
          - String, Number, Binary
-         - No restrictions of 
+         - No restrictions of other data types
            
     ![Items.PNG](/Items.PNG)
     
