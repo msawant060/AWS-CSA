@@ -23,7 +23,7 @@ A variety of products and services that provide scalable computing capacity in c
    - Amazon ECS integrates with ELB, and Amazon EBS.
 
 5. Amazon Elastic Beanstalk
-   - It lets you run and manage web applications without worriying about the underlining infrastructure 
+   - It lets you run and manage web applications without worrying about the underlining infrastructure 
    - You can use Amazon ECS to deploy web applications with Java, .NET, PHP, Node.js, Python, Ruby, Go, and Docker on servers such as Apache, Nginx, and so on..
   
 6. Amazon Lightsail
