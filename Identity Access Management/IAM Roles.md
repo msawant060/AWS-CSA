@@ -12,7 +12,10 @@
     - That doesn't have access to AWS resources 
  
  * why to use Role?
-  -  
+  -  **it allows you to delgate access with defined permissions to trusted entities without having to share long-term access keys.**
+  - When EC2 accessess AWS resources such as S3 via IAM User, the user's security credentials get stored on that EC2 instance, **THIS SHOULD BE AVOIDED. 
+   - When EC2 assumes a role, its credentials are not stored - **Making a secure way of accessing resources**
+   
 
 
 
