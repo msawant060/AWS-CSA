@@ -33,3 +33,8 @@
 * AWS Service-lined-role:
 
 * Role Chaining:
+
+* Trust Policy: A document in JASON format in which you define **WHO is allowed to assume the role**. 
+
+* Permission Policy: A permission document in JASON format in which you define **WHAT ACTIONS and RESOURCES the role can use.** 
+
