@@ -43,3 +43,6 @@
 
 * Permission Policy: A permission document in JASON format in which you define **WHAT ACTIONS and RESOURCES the role can use.** 
 
+# Important points related to ROLES
+
+* You can only assosiate one IAM role with EC2 instance at this time. You **CAN NOT** assosiate more than one IAM role with an EC2 instance. **This limit one role per instance CAN NOT be increased**
