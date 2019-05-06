@@ -46,3 +46,12 @@
 # Important points related to ROLES
 
 * You can only assosiate one IAM role with EC2 instance at this time. You **CAN NOT** assosiate more than one IAM role with an EC2 instance. **This limit one role per instance CAN NOT be increased**
+
+* You can consume an IAM role by:
+  - Calling AWS Security Token Service (STS)
+  - AssumeRole APIs (Assume Role, Assume Role with Web Indentity, Assume Role with SAML)
+  
+* If you delte an IAM Role that is assosiated with a running EC2 instance, any application running on the instance that is using the role will be **DENIED ACCESS IMMIDIATELY**
+
+* 
+  
