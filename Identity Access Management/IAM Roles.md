@@ -53,5 +53,15 @@
   
 * If you delte an IAM Role that is assosiated with a running EC2 instance, any application running on the instance that is using the role will be **DENIED ACCESS IMMIDIATELY**
 
-* 
+* Role can be assigned to EC2 instances in the following scenarios:
+  - When you launch an instance 
+  - Already running instance 
+  
+ * You CAN NOT add an IAM role to an **IAM GROUP**
+ 
+ * IAM roles CAN NOT make direct requests to AWS services
+   - They are meant to be assumed by authorized entities (IAM USers, Applications or AWS Services such as EC2)
+   
+  * IAM Roles are free to charge. 
+ 
   
