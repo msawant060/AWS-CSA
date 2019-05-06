@@ -24,3 +24,8 @@
 * Use Roles to Delegate Permissions 
 
 * Monitor Activity in your AWS Account 
+  - Logging features are available:
+      - CloudTrail
+      - CloudWatch
+      - Config
+      - S3
