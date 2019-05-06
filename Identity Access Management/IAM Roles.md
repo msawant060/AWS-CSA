@@ -14,6 +14,8 @@
     - Applications
     - Services 
     - That doesn't have access to AWS resources 
+    - Thanks for https://www.whizlabs.com for the following image:     
+    - ![Roles.PNG](/Roles.PNG)
  
 * Why use IAM Role?
   - **it allows you to delgate access with defined permissions to trusted entities without having to share long-term access keys.**
@@ -25,6 +27,9 @@
   - Provide access for an IAM user on one AWS account that you own to access resources in another account that you own.
   - Provide access for external authenticated users (Indetity federation (Facebook, LinkedIN)
   - Provide access to IAM users in AWS account owned by 3rd parties. 
+  - The following picture shows all the cases:
+  
+  ![Roles2.PNG](/Roles2.PNG)
 
 * AWS Service Role:
 
