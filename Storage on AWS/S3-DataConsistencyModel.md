@@ -1,4 +1,5 @@
-Source URL: https://www.whizlabs.com
+Source URL: https://www.whizlabs.com/aws-solutions-architect-associate/
+
 # Data Consistency Model
 
 * What is it? This shows how the results would be after PUTS/GETS/DELETES are done on the S3 objects
