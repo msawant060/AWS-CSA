@@ -9,3 +9,7 @@
     - Version-Suspended 
   
  - Once the bucket version is Enables, the versioning can **ONLY BE SUSPENDED**, the bucket cannot be **UN-VERSIONED BACK**
+
+- The versioning state applies to all of the objects in the bucket
+
+- 
