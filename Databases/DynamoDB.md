@@ -1,3 +1,4 @@
+Source from: https://www.whizlabs.com/aws-solutions-architect-associate/
 # DynamoDB
 
 * What is DynamoDB?
