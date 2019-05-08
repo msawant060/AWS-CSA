@@ -32,7 +32,7 @@
   - Objects stored in a region NEVER leave the region, unless you explicilty transfer them to another region.
   
   
-  source: https://www.whizlabs.com
+  source: https://www.whizlabs.com/aws-solutions-architect-associate/
  
    
   
