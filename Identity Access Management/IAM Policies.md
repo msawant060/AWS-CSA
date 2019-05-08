@@ -1,3 +1,5 @@
+Source URL: https://www.whizlabs.com/aws-solutions-architect-associate/
+
 # IAM Policy
 
 * A policy is an entity in AWS that, when attached to an identity or resource defines their permissions. 
