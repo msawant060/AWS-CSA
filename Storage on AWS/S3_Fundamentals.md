@@ -1,6 +1,7 @@
 # S3 Fundamentals
  * Bucket
     - A Container that stores the objects that are uploaded to S3
+    - They are **PRIVATE** by default
  * Object
    - Fundamental entities stored in Amazon S3. (Pictures, Audio, Video)
    - Object has the following 2 memebers 
