@@ -1,5 +1,7 @@
+Source URL: https://www.whizlabs.com/aws-solutions-architect-associate/
+
 * What is IAM Role?
-  - A set of permissions that grant access to actions and resources in AWS. These permissions are attached to the **ROLE** NOT to an **IAM    User or Group**
+  - A set of permissions that grant access to actions and resources in AWS. These permissions are attached to the **ROLE** NOT to an **IAM Group**
   - You can assign a Role to EC2 or User or Mobile Application to access resources 
   - Role does NOT have a statndard long term credentials. (such as user name and password or access key)
   - However, when you assign a Role to a user a **Temporary Security Credential** will assign to user to provide more secure granular access
