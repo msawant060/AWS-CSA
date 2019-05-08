@@ -30,7 +30,9 @@
  * Region.
   - You can access bucket from any region.
   - Objects stored in a region NEVER leave the region, unless you explicilty transfer them to another region.
-  - 
+  
+  
+  source: https://www.whizlabs.com
  
    
   
