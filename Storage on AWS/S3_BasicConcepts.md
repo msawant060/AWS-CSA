@@ -68,4 +68,4 @@
   
   6. Disaster Recovery 
   
- Source: https://www.whizlabs.com and https://acloud.guru/
+ Source: https://www.whizlabs.com/aws-solutions-architect-associate/ and https://acloud.guru/
