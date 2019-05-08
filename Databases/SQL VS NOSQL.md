@@ -8,3 +8,4 @@
 | Emphasizes on ACID (Atomicity, Consistency, Isolation, and Durability) | Follow CAP theorm (Consistency, Availability, and PArtition tolerance) | 
 | MS-SQL, Oracle, MySQL | DynamoDB, MongoDB |
 
+Source: https://www.whizlabs.com/aws-solutions-architect-associate/
