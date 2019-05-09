@@ -20,4 +20,6 @@
       - Most records are delivered within a few hours of the time that they are recorded but timeliness of server logging is not guranteed. 
    
   # Object level Logging
-    -  Logging happens at the Object Level
+   - Logging happens at the Object Level
+   - When you enable this to an S3 bucket, and when a user or application tried to access an object in this bucket, if a CloudTrail trail      is setup for this S3 bucket Data Event, the logs will be created in the target bucket.
+   -  ![ObjectLevelLoggins.PNG](/ObjectLevelLoggins.PNG)
