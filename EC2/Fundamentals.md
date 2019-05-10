@@ -150,9 +150,13 @@ Source: https://www.whizlabs.com/aws-solutions-architect-associate
        - Protocol: TCP, UDP, ICMP
        - Port Number or Range
        - Source of the traffic and the description
-       - All **incoming traffic is denied by security group**
-       - You can **only define allow rules**
+   - All **incoming traffic is denied by security group**
+   - You can **only define allow rules**
    - **Stateful** : If you ALLOW traffic of a perticular type from a source into your instance, the outgoing traffic is ALLOWED            automatically
    - It works on Instance level and you can have multiple security group under one security group
    
-    
+  #### 11. AWS EC2 Key-pair
+   - Amazon EC2 uses Public-key cryptography to encrypt and decrypt the login information
+   - Public-key cryptography encrypt the password using public key, then the recipient or the user uses the private key to decrypt the        data.
+   
+   
