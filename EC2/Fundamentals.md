@@ -1,3 +1,5 @@
+Source: https://www.whizlabs.com/aws-solutions-architect-associate
+
 * What is EC2?
    - Amazon Elastic Compute Cloud (Amazon EC2) provides scalable computing capacity in the Amazon Web Services (AWS) cloud
    - VMs hosted on AWS infrastructure 
@@ -76,12 +78,12 @@
      5. Dedicated Hosts
           - Pay for a physical host that is fully dedicated to running your instances, 
           - and bring your existing per-socket, per-core, or per-VM software licenses to reduce costs.
+          
      6. Dedicated Instances 
           - Pay, by the hour, for instances that run on single-tenant hardware.
-          
+     Soure: https://www.whizlabs.com/aws-solutions-architect-associate    
      ![DedicatedHost.PNG](/DedicatedHost.PNG)
  
      7. Capacity Reservations 
           - Reserve capacity for your EC2 instances in a specific Availability Zone for any duration.
-            
- * 
+
