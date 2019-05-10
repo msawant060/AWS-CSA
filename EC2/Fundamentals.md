@@ -80,15 +80,15 @@ Source: https://www.whizlabs.com/aws-solutions-architect-associate
           - Pay for a physical host that is fully dedicated to running your instances, 
           - and bring your existing per-socket, per-core, or per-VM software licenses to reduce costs.
           
-      6. Dedicated Instances 
+     6. Dedicated Instances 
           - Pay, by the hour, for instances that run on single-tenant hardware.
      Soure: https://www.whizlabs.com/aws-solutions-architect-associate    
      ![DedicatedHost.PNG](/DedicatedHost.PNG)
  
-      7. Capacity Reservations 
+     7. Capacity Reservations 
           - Reserve capacity for your EC2 instances in a specific Availability Zone for any duration.
           
- * Volume Types: 3 Tpes
+ * AWS Storage Volume Types: 3 Tpes
       1. General Purpose SSD (SSD: Solid State Drive)
       2. Provisioned IPOS SSD (SSD: Solid State Drive)
       3. Magnetic HDD (HDD: Hard Disk Drive)
@@ -133,7 +133,12 @@ Source: https://www.whizlabs.com/aws-solutions-architect-associate
     - Lowest cost HDD
     - Max throughput per volume is 250 Megabits/S
    
-    
+  * Encryption of Volume
+    - When you encrypt the EBS volume that following type of data are encrypted:
+         - Data at rest inside the volume
+         - All data moving between the volume and the instance
+         - All snapshots created from the volume
+         - All volumes created from those snapshots
     
     
     
