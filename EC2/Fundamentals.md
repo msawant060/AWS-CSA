@@ -142,5 +142,14 @@ Source: https://www.whizlabs.com/aws-solutions-architect-associate
         - All snapshots created from the volume
         - All volumes created from those snapshots
     
-    
+#### 10. Security Group
+   - Protects the **instance** by applying a security wall of rules (like firwall)
+   - Controls the traffic coming IN and going OUT of the instance
+   - Following are some rules you can set for the security group
+         - Types of request : TCP, UDP, HTTP, HTPS, Custom
+         - Protocol: TCP, UDP, ICMP
+         - Port Number or Range
+         - Source of the traffic and the description
+         
+   
     
