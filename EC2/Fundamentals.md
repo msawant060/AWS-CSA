@@ -101,10 +101,39 @@ Source: https://www.whizlabs.com/aws-solutions-architect-associate
     | Cost high | Compare to SSD less cost |
     
  * General purpose SSD
+    - It can be used as **root volume of EC2 instance**
     - Baseline performance of 3 IPOS per GiB (Gibibytes = Gib = 1.074 Gigabytes)
     - Minimum IOPS is 100 and Maximum is 10,000
-    - It is most suited for general purpose where it balance cost and performance
-    - It can be used as **root volume of EC2 instance**
+    - It is most suited for general purpose where it balance cost and performance   
     - Most used or Low-Latency interactive applications and Development and test environment
+    
+ * Provisioned Throughput SSD
+    - It can be used as **root volume of EC2 instance**
+    - Baseline performance of 50 IPOS per GiB (Gibibytes = Gib = 1.074 Gigabytes)
+    - Minimum IOPS is 100 and Maximum is 32,000
+    - Suited for applications that require sustained IOPS performance, more than 10, 000 IOPS, or 160 MiB/s of throughput per volume
+    - Use for appliations that needs Database workload is high
+    
+  * Magnetic HDD
+    - It can be used as **root volume of EC2 instance**
+    - Older generation volumes are backend by magnetic drives
+    - Suited for applications where low-cost storage for small volume size is important
+    - Baseline performance approximately 100 IOPS
+    - Avarage and max throughput is 90 MiB/second
+  
+  * Throughput Optimized HDD
+    - It can NOT be used as **root volume of EC2 instance**
+    - For application that have frequenty accesses, throughput-intensive workloads
+    - Low cost HDD
+    - Max throughput per volume is 500 Megabits/S
+    
+  * Cold HDD
+    - It can NOT be used as **root volume of EC2 instance**
+    - For application that have lessfrequently accesses, non-intensive workloads
+    - Lowest cost HDD
+    - Max throughput per volume is 250 Megabits/S
+   
+    
+    
     
     
