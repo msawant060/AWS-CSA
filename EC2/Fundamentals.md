@@ -146,11 +146,12 @@ Source: https://www.whizlabs.com/aws-solutions-architect-associate
    - Protects the **instance** by applying a security wall of rules (like firwall)
    - Controls the traffic coming IN and going OUT of the instance
    - Following are some rules you can set for the security group
-         - Types of request : TCP, UDP, HTTP, HTPS, Custom
-         - Protocol: TCP, UDP, ICMP
-         - Port Number or Range
-         - Source of the traffic and the description
-         - All **incoming traffic is denied by security group**
-         - You can **only define allow rules**
+       - Types of request : TCP, UDP, HTTP, HTPS, Custom
+       - Protocol: TCP, UDP, ICMP
+       - Port Number or Range
+       - Source of the traffic and the description
+       - All **incoming traffic is denied by security group**
+       - You can **only define allow rules**
+   - **Stateful** : If you ALLOW traffic of a perticular type from a source into your instance, the outgoing traffic is ALLOWED            automatically
    
     
