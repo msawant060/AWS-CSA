@@ -93,9 +93,18 @@ Source: https://www.whizlabs.com/aws-solutions-architect-associate
       2. Provisioned IPOS SSD (SSD: Solid State Drive)
       3. Magnetic HDD (HDD: Hard Disk Drive)
  
-  * Difference between Solid State Drive and Hard Disk Drive
+ * Difference between Solid State Drive and Hard Disk Drive
   
     | Solid State Drive | Hard Disk Drive |
     |-------------------|-----------------|
     | Most suitable for applications that require frequent read/write operation with small I/O | Most suitable whe the througput(MiB/s) more critical than IOPS |
-    | Coast high | Compare to SSD less coast |
+    | Cost high | Compare to SSD less cost |
+    
+ * General purpose SSD
+    - Baseline performance of 3 IPOS per GiB (Gibibytes = Gib = 1.074 Gigabytes)
+    - Minimum IOPS is 100 and Maximum is 10,000
+    - It is most suited for general purpose where it balance cost and performance
+    - It can be used as **root volume of EC2 instance**
+    - Most used or Low-Latency interactive applications and Development and test environment
+    
+    
