@@ -1,4 +1,5 @@
 Source: https://www.whizlabs.com/aws-solutions-architect-associate
+# Amazon Elastic Compute Cloud (Amazon EC2)
 
 #### 1. What is EC2?
    - Amazon Elastic Compute Cloud (Amazon EC2) provides scalable computing capacity in the Amazon Web Services (AWS) cloud
