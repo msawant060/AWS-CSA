@@ -150,6 +150,7 @@ Source: https://www.whizlabs.com/aws-solutions-architect-associate
          - Protocol: TCP, UDP, ICMP
          - Port Number or Range
          - Source of the traffic and the description
-         
+         - All **incoming traffic is denied by security group**
+         - You can **only define allow rules**
    
     
