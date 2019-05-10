@@ -43,7 +43,8 @@ Source: https://www.whizlabs.com/aws-solutions-architect-associate
  
  Full details: https://aws.amazon.com/ec2/instance-types/
  
- * Amazon EC2 Purchasing Options: 
+* Amazon EC2 Purchasing Options: 
+
     1. On-Demand Instances  
          - Pay, by the second, for the instances that you launch.
          - Pay-as-you-go
@@ -79,11 +80,22 @@ Source: https://www.whizlabs.com/aws-solutions-architect-associate
           - Pay for a physical host that is fully dedicated to running your instances, 
           - and bring your existing per-socket, per-core, or per-VM software licenses to reduce costs.
           
-     6. Dedicated Instances 
+      6. Dedicated Instances 
           - Pay, by the hour, for instances that run on single-tenant hardware.
      Soure: https://www.whizlabs.com/aws-solutions-architect-associate    
      ![DedicatedHost.PNG](/DedicatedHost.PNG)
  
-     7. Capacity Reservations 
+      7. Capacity Reservations 
           - Reserve capacity for your EC2 instances in a specific Availability Zone for any duration.
-
+          
+ * Volume Types: 3 Tpes
+      1. General Purpose SSD (SSD: Solid State Drive)
+      2. Provisioned IPOS SSD (SSD: Solid State Drive)
+      3. Magnetic HDD (HDD: Hard Disk Drive)
+ 
+  * Difference between Solid State Drive and Hard Disk Drive
+  
+    | Solid State Drive | Hard Disk Drive |
+    |-------------------|-----------------|
+    | Most suitable for applications that require frequent read/write operation with small I/O | Most suitable whe the througput(MiB/s) more critical than IOPS |
+    | Coast high | Compare to SSD less coast |
