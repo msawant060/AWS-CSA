@@ -153,5 +153,6 @@ Source: https://www.whizlabs.com/aws-solutions-architect-associate
        - All **incoming traffic is denied by security group**
        - You can **only define allow rules**
    - **Stateful** : If you ALLOW traffic of a perticular type from a source into your instance, the outgoing traffic is ALLOWED            automatically
+   - It works on Instance level and you can have multiple security group under one security group
    
     
