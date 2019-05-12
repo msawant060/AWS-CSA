@@ -45,12 +45,11 @@
           - Conditions
                 - Host Based (Optinal)
                 - Past Based (Optional)      
-      
-    - Health Checks:
+         - Health Checks:
     
       - Monitor the health of the registerd targets, so that LB can send the request to health targets
  
-    - Target and Target Group:
+  - Target and Target Group:
     
       - Target: Resource to which the requests get forwarded by ALB
       
