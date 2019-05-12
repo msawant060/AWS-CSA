@@ -2,7 +2,8 @@
 
 - Amazon ELB allows you to make your applications highly available by using:
   - Health checks
-  - and distributing traffic across a number of instances.
+      - ELB routes taffic to ONLY Healthy Instances. It does not route traffic to the unhealthy instances even if they are registed.
+  - Distributing traffic across a number of instances.
   
 #### Consider that you have a WordPress blog which is running on a single t2-micro EC2 instance.
   - Now you publish an article, it goes viral and your site gets hundreds of thousands of requests. Since you are using a single t2-micro, your website will probably crash.
