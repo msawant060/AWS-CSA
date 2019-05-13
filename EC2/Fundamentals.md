@@ -168,15 +168,18 @@ Source: https://www.whizlabs.com/aws-solutions-architect-associate
    1. Protects the **instance** by applying a security wall of rules (like firwall)
    2. Controls the traffic coming IN and going OUT of the instance
    3. Following are some rules you can set for the security group
-       - Types of request : TCP, UDP, HTTP, HTPS, Custom
+       - Type of Request : TCP, UDP, HTTP, HTPS, Custom
        - Protocol: TCP, UDP, ICMP
        - Port Number or Range
-       - Source of the traffic and the description
+       - Source of the traffic
+       - Description
    4. All **incoming traffic is denied by security group**
-   5. You can **only define allow rules**. You CAN NOT specify any **"DENY RULE"**
-   6. **Stateful** : If you ALLOW traffic of a perticular type from a source into your instance, the outgoing traffic is ALLOWED            automatically
+   5. Security Group Rules are awlays **Permissive** You can **only define allow rules**. You CAN NOT specify any **"DENY RULE"**
+   6. Security Group Rules are awlays**Stateful** : If you ALLOW traffic of a perticular type from a source into your instance, the           outgoing traffic is ALLOWED automatically
    7. It works on Instance level and you can have multiple security group under one security group
    8. You cannot block specific IP addresses using Security Groups, use Network Access Control Lists.
+   
+   ![SecurityGroup.PNG](/SecurityGroup.PNG)
    
   #### 12. AWS EC2 Key-pair
    - Amazon EC2 uses Public-key cryptography to encrypt and decrypt the login information
