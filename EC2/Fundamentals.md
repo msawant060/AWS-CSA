@@ -2,35 +2,28 @@ Source: https://www.whizlabs.com/aws-solutions-architect-associate
 # Amazon Elastic Compute Cloud (Amazon EC2)
 
 #### 1. What is EC2?
-   - Amazon Elastic Compute Cloud (Amazon EC2) provides scalable computing capacity in the Amazon Web Services (AWS) cloud
-   - VMs hosted on AWS infrastructure 
+   1. Amazon Elastic Compute Cloud (Amazon EC2) provides scalable computing capacity in the Amazon Web Services (AWS) cloud
    
 #### 2. What is an AMI?
-   - An Amazon Machine Image (AMI) provides the information required to launch an instance. 
-   - You must specify an AMI when you launch an instance.
-   - A template required to launch an EC2
-   - Includes:
-        - Template for the root volume (OS, software package)
-        - Launch permissins
-        - Volume information
+   1. An Amazon Machine Image (AMI) provides the information required to launch an instance. (like a template required to launch an EC2)
+   2. You must specify an AMI when you launch an instance.   
         
-#### 3. Before you can launch an instance, you must select an AMI to use. 
-   - As you select an AMI, consider the following requirements you might have for the instances that you'll launch:
-        - The Region
-        - The operating system
-        - The architecture: 32-bit (i386) or 64-bit (x86_64)
-        - The root device type (Storge for root device): Amazon EBS or instance store
-        - The provider (for example, Amazon Web Services)
-        - Additional software (for example, SQL server)
+#### 3. Before you can launch an instance, what you must select from an AMI to use. (6 point to remember)
+   1. The Region
+   2. The Operating System
+   3. The architecture: 32-bit (i386) or 64-bit (x86_64)
+   4. Root device type (EBS, Instance store)
+   5. The provider (for example, Amazon Web Services)
+   6. Additional software (for example, SQL server)
          
 #### 4. You can launch EC2 instances from:
-   - AWS Market place
-   - Community Repository
-   - Your Own
+   1. AWS Market place
+   2. Community Repository
+   3. Your Own
   
 #### 5. AWS Supports the following 2 types of Virtualization
-   - HVM - Hardware Assisted Virtual Machine (**for best performance use this)
-   - Paravirtualization 
+   1. HVM - Hardware Assisted Virtual Machine (**for best performance use this)
+   2. Paravirtualization 
             
 #### 6. Amazon EC2 Instance Types ( 5 major types)
  
@@ -144,7 +137,16 @@ Source: https://www.whizlabs.com/aws-solutions-architect-associate
     - For application that have lessfrequently accesses, non-intensive workloads
     - Lowest cost HDD
     - Max throughput per volume is 250 Megabits/S
-   
+    
+#### 10. Difference between EBS and Instance Store
+   | EBS | Instance Store |
+   |-----|----------------|
+   | Data Persists when the instance STOP and RE-STARTED | Data DOES NOT PERSISTS When the instance STOP and RE-STARTED|
+   | Instance Termination, based on the user choise during the instance creation data can be persists | Instance Termination, data will be lost| 
+   | We can attach EBS volume to all instance types | This supported by selected instance only |
+   | Size of EBS volume can be decided as per our needs and can be modified if required | Size is dtermined by the instance type you selected, such as c1.medium |
+   | This is for **All Important data** | This is for **Temporary data storage** | 
+
 #### 9. Encryption of Volume
    - When you encrypt the EBS volume that following type of data are encrypted:
         - Data at rest inside the volume
@@ -152,7 +154,7 @@ Source: https://www.whizlabs.com/aws-solutions-architect-associate
         - All snapshots created from the volume
         - All volumes created from those snapshots
     
-#### 10. Security Group
+#### 10. Security Group (totally 8 points)
    1. Protects the **instance** by applying a security wall of rules (like firwall)
    2. Controls the traffic coming IN and going OUT of the instance
    3. Following are some rules you can set for the security group
@@ -161,7 +163,7 @@ Source: https://www.whizlabs.com/aws-solutions-architect-associate
        - Port Number or Range
        - Source of the traffic and the description
    4. All **incoming traffic is denied by security group**
-   5. You can **only define allow rules**
+   5. You can **only define allow rules**. You CAN NOT specify any **"DENY RULE"**
    6. **Stateful** : If you ALLOW traffic of a perticular type from a source into your instance, the outgoing traffic is ALLOWED            automatically
    7. It works on Instance level and you can have multiple security group under one security group
    8. You cannot block specific IP addresses using Security Groups, use Network Access Control Lists.
