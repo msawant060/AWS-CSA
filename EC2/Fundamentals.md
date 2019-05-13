@@ -138,7 +138,8 @@ Source: https://www.whizlabs.com/aws-solutions-architect-associate
     - Lowest cost HDD
     - Max throughput per volume is 250 Megabits/S
     
-#### 10. Difference between EBS and Instance Store
+#### 9. Difference between EBS and Instance Store (source: https://aws.amazon.com/premiumsupport/knowledge-center/instance-store-vs-ebs/)
+
    | EBS | Instance Store |
    |-----|----------------|
    | Data Persists when the instance STOP and RE-STARTED | Data DOES NOT PERSISTS When the instance STOP and RE-STARTED|
@@ -147,14 +148,14 @@ Source: https://www.whizlabs.com/aws-solutions-architect-associate
    | Size of EBS volume can be decided as per our needs and can be modified if required | Size is dtermined by the instance type you selected, such as c1.medium |
    | This is for **All Important data** | This is for **Temporary data storage** | 
 
-#### 9. Encryption of Volume
+#### 10. Encryption of Volume
    - When you encrypt the EBS volume that following type of data are encrypted:
-        - Data at rest inside the volume
-        - All data moving between the volume and the instance
-        - All snapshots created from the volume
-        - All volumes created from those snapshots
+        1. Data at rest inside the volume
+        2. All data moving between the volume and the instance
+        3. All snapshots created from the volume
+        4. All volumes created from those snapshots
     
-#### 10. Security Group (totally 8 points)
+#### 11. Security Group (totally 8 points)
    1. Protects the **instance** by applying a security wall of rules (like firwall)
    2. Controls the traffic coming IN and going OUT of the instance
    3. Following are some rules you can set for the security group
@@ -168,7 +169,7 @@ Source: https://www.whizlabs.com/aws-solutions-architect-associate
    7. It works on Instance level and you can have multiple security group under one security group
    8. You cannot block specific IP addresses using Security Groups, use Network Access Control Lists.
    
-  #### 11. AWS EC2 Key-pair
+  #### 12. AWS EC2 Key-pair
    - Amazon EC2 uses Public-key cryptography to encrypt and decrypt the login information
    - Public-key cryptography encrypt the password using public key, then the recipient or the user uses the private key to decrypt the        data.
    
