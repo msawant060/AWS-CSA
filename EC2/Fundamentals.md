@@ -27,13 +27,13 @@ Source: https://www.whizlabs.com/aws-solutions-architect-associate
             
 #### 6. Amazon EC2 Instance Types ( 5 major types)
  
- | Speciality | Family | 
- |------------|--------|
- | General Purpose | A, T , M | 
- | Compute Optimized | C |
- | Memory Optimized | R, X, Z |
- | Accelerated Computing OR GPU | G, P, F |
- | Storage Optimized | H, I, D |
+ | Speciality | Family | Example Cases |
+ |------------|--------|---------------|
+ | General Purpose | A, T , M | Web Server, Develoment Environment, code Repo, Micro Services, Test and Stage Env | 
+ | Compute Optimized | C | Media Trancoding, Application with large number of concurrent users, long running batch jobs, Game Server |
+ | Memory Optimized | R, X, Z | Oracle database in memory, MongoDB, Cassandra, Big data processing |
+ | Accelerated Computing OR GPU | G, P, F | GPU |
+ | Storage Optimized | H, I, D | Data Ware house , MapReduce, Hadoop, RDBMS | 
  
  Full details: https://aws.amazon.com/ec2/instance-types/
  
