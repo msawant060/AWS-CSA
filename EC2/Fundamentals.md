@@ -91,10 +91,17 @@ Source: https://www.whizlabs.com/aws-solutions-architect-associate
    7. Capacity Reservations 
         - Reserve capacity for your EC2 instances in a specific Availability Zone for any duration.
           
-#### 8. AWS Storage Volume Types: 3 Tpes
-   1. General Purpose SSD (SSD: Solid State Drive)
-   2. Provisioned IPOS SSD (SSD: Solid State Drive)
-   3. Magnetic HDD (HDD: Hard Disk Drive)
+#### 8. Elastic Block Storage (EBS) AWS Storage Volume Types: 3 Tpes
+   - Amazon EBS allows you to create storage volumes and attach them Amazon EC2 instances. 
+   - Once attached:
+      - You can create a file system on top of theses volumes, 
+      - Run a database, or 
+      - Use them in any other way you would use a block device.
+      
+   - The following are the main 3 types
+      - 1. General Purpose SSD (SSD: Solid State Drive)
+      - 2. Provisioned IPOS SSD (SSD: Solid State Drive)
+      - 3. Magnetic HDD (HDD: Hard Disk Drive)
  
 ##### Difference between Solid State Drive and Hard Disk Drive
 
@@ -103,34 +110,36 @@ Source: https://www.whizlabs.com/aws-solutions-architect-associate
 | Most suitable for applications that require frequent read/write operation with small I/O | Most suitable whe the througput(MiB/s) more critical than IOPS |
 | Cost high | Compare to SSD less cost |
     
-* General purpose SSD
+* General purpose SSD (GP2)
+    - Used for: general purpose where it balance cost and performance   
     - It can be used as **root volume of EC2 instance**
     - Baseline performance of 3 IPOS per GiB (Gibibytes = Gib = 1.074 Gigabytes)
-    - Minimum IOPS is 100 and Maximum is 10,000
-    - It is most suited for general purpose where it balance cost and performance   
+    - Minimum IOPS is 100 and Maximum is 10,000   
     - Most used or Low-Latency interactive applications and Development and test environment
     
-* Provisioned Throughput SSD
+* Provisioned Throughput SSD (IO1)
+    - Used for: I/O intensive applications such as large relational or NoSQL databases.
     - It can be used as **root volume of EC2 instance**
     - Baseline performance of 50 IPOS per GiB (Gibibytes = Gib = 1.074 Gigabytes)
     - Minimum IOPS is 100 and Maximum is 32,000
     - Suited for applications that require sustained IOPS performance, more than 10, 000 IOPS, or 160 MiB/s of throughput per volume
     - Use for appliations that needs Database workload is high
     
- * Magnetic HDD
+ * Magnetic HDD (Standard)
+    - Used for: Where data is accessed infrequently, and applications where the lowest storage cost is importan.
     - It can be used as **root volume of EC2 instance**
     - Older generation volumes are backend by magnetic drives
-    - Suited for applications where low-cost storage for small volume size is important
     - Baseline performance approximately 100 IOPS
     - Avarage and max throughput is 90 MiB/second
   
- * Throughput Optimized HDD
+ * Throughput Optimized HDD (ST1)
+    - Used for: Big Data, Data warehouse, Log Processing.
     - It can NOT be used as **root volume of EC2 instance**
-    - For application that have frequenty accesses, throughput-intensive workloads
-    - Low cost HDD
+    - For application that have frequenty accesses, throughput-intensive workloads    
     - Max throughput per volume is 500 Megabits/S
     
- * Cold HDD
+ * Cold HDD (SC1)
+    - Used for: File Server.
     - It can NOT be used as **root volume of EC2 instance**
     - For application that have lessfrequently accesses, non-intensive workloads
     - Lowest cost HDD
@@ -144,17 +153,18 @@ Source: https://www.whizlabs.com/aws-solutions-architect-associate
         - All volumes created from those snapshots
     
 #### 10. Security Group
-   - Protects the **instance** by applying a security wall of rules (like firwall)
-   - Controls the traffic coming IN and going OUT of the instance
-   - Following are some rules you can set for the security group
+   1. Protects the **instance** by applying a security wall of rules (like firwall)
+   2. Controls the traffic coming IN and going OUT of the instance
+   3. Following are some rules you can set for the security group
        - Types of request : TCP, UDP, HTTP, HTPS, Custom
        - Protocol: TCP, UDP, ICMP
        - Port Number or Range
        - Source of the traffic and the description
-   - All **incoming traffic is denied by security group**
-   - You can **only define allow rules**
-   - **Stateful** : If you ALLOW traffic of a perticular type from a source into your instance, the outgoing traffic is ALLOWED            automatically
-   - It works on Instance level and you can have multiple security group under one security group
+   4. All **incoming traffic is denied by security group**
+   5. You can **only define allow rules**
+   6. **Stateful** : If you ALLOW traffic of a perticular type from a source into your instance, the outgoing traffic is ALLOWED            automatically
+   7. It works on Instance level and you can have multiple security group under one security group
+   8. You cannot block specific IP addresses using Security Groups, use Network Access Control Lists.
    
   #### 11. AWS EC2 Key-pair
    - Amazon EC2 uses Public-key cryptography to encrypt and decrypt the login information
