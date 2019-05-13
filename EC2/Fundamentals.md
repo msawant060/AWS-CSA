@@ -87,8 +87,8 @@ Source: https://www.whizlabs.com/aws-solutions-architect-associate
 #### 8. Elastic Block Storage (EBS) AWS Storage Volume Types: 3 Tpes
    - Amazon EBS allows you to create storage volumes and attach them Amazon EC2 instances. 
    - Once attached:
-      - You can create a file system on top of theses volumes, 
-      - Run a database, or 
+      - You can create a file system on top of theses volumes
+      - Run a database 
       - Use them in any other way you would use a block device.
       
    - The following are the main 3 types
@@ -96,12 +96,21 @@ Source: https://www.whizlabs.com/aws-solutions-architect-associate
       - 2. Provisioned IPOS SSD (SSD: Solid State Drive)
       - 3. Magnetic HDD (HDD: Hard Disk Drive)
  
+##### Difference between Storage IOPS and Storage Throughput (Source: https://storageservers.wordpress.com/2015/11/10/difference-between-storage-iops-and-storage-throughput)
+
+ - Throughput:
+      - Data transfer speed in megabytes per second is often termed as throughput. 
+      - Earlier, it was measured in Kilobytes. But now the standard has become megabytes.
+ - IOPS:
+      - The time taken for a storage system to perform an Input/Output operation per second from start to finish constitutes IOPS.
+
 ##### Difference between Solid State Drive and Hard Disk Drive
 
-| Solid State Drive | Hard Disk Drive |
+| Solid State Drive (SSD) | Hard Disk Drive (HDD) |
 |-------------------|-----------------|
 | Most suitable for applications that require frequent read/write operation with small I/O | Most suitable whe the througput(MiB/s) more critical than IOPS |
-| Cost high | Compare to SSD less cost |
+| High Cost | Less Cost |
+| GP2, IO1 | Standard, ST1, SC1 |
     
 * General purpose SSD (GP2)
     - Used for: general purpose where it balance cost and performance   
