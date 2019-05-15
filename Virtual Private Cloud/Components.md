@@ -37,15 +37,7 @@
   - There are 2 types of NAT devices available in AWS:
       - NAT Instances 
       - NAT GateWays
-    
-#### NAT Instances
-  - When creating a NAT instance,**Need to** Disable Source/Destination Check on the instance.
-  - NAT instances must be in a **public subnet**
-  - There must be a route out of the private subnet to the NAT, in order for this to work.
-  - The amount of traffic that NAT instances can support depends on the instance size. If you are bottlenecking, increase the instance       size.
-  - localted **Behind a Security Group**
-  - You can create high availability using Autoscaling Groups, multiple subnets in different AZs, and a script to automate failover.
-
+      
 #### NAT Gateways
   - **NO NEED** to Disable Source/Destination Checks on the instance
   - Automatically assigned public IP / You must specify elastic IP address
@@ -56,16 +48,24 @@
   - Having one NAT Gateway in one AZ is not good enough, must me redundant in multiple AZs
   - No need to patch OS
   - Not associated with security groups
- 
-* Egress-Only Internet Gateway
+  - This is for IPv4
+  
+#### NAT Instances (NOTE: Teva you didn't do this in demo)
+  - When creating a NAT instance,**Need to** Disable Source/Destination Check on the instance.
+  - NAT instances must be in a **public subnet**
+  - There must be a route out of the private subnet to the NAT, in order for this to work.
+  - The amount of traffic that NAT instances can support depends on the instance size. If you are bottlenecking, increase the instance       size.
+  - localted **Behind a Security Group**
+  - You can create high availability using Autoscaling Groups, multiple subnets in different AZs, and a script to automate failover.
+
+#### Egress-Only Internet Gateway
    - Simalar to NAT Gateway, this is a component of your VPC allows Amazon VPC to communicate with the Internet for **IPv6 traffic**.  
    - NOTE: This is **outbound** ONLY. 
         - It prevents internet IPv6 connection to your instance. Only your instance can connect outside world.
    - The main difference between this and NAT Gateway is:
-        - This is one is for IPv6
-        - and NAT Gateways are for IPv4
+        - This one is for IPv6
                 
-* Network Access Control Lists (NACL)
+#### Network Access Control Lists (NACL)
    - An NACL is a layer of security that acts as a firewall at the **SUBNET LEVEL** in VPC.
    - **NACL are stateless; 
       - if a port open for inbound traffic, the corresponding output traffic is not enables automatically.      
@@ -75,9 +75,9 @@
    - If you dont explicitly associate a subnet with a network ACL, the subnet is automatically associated with the default NACL.
    - You can associate a NACL with multiple subnets; 
    - However, A subnet can be associated with only ONE network ACL at a time. When you associate a NACL with a subnet, the previous association is removed.
-   - NACLs contain a numbered list of rules that is evaluated in order, starting with the lowest numbered rule
+   - NACLs contain a numbered list of rules that is evaluated in order, starting with the **lowest numbered rule**
 
-* Security Group
+#### Security Group
   - A Security Group is a layer of security that acts as a firewall at the **INSTANCE LEVEL** in  a VPC.
   - **Security Groups are stateful; 
       - if a port open for inbound traffic, the corresponding output traffic IS enables automatically.
@@ -88,7 +88,7 @@
       - NO Inbound traffic is ALLOWED.
    - There are no deny rules in Security Groups. The ONLY way to deny something is NOT ALLOWING.
    
- * AMAZON VPC Peering
+#### AMAZON VPC Peering
    - It helps to connect one virtual private cloud to another 
    - and route the traffic across the vitual private clouds using IPv4 or IPv6 addresses
    - Once the VPC Perring is estabilished the instance running on both VPCs communicate with each other as if they were in the same           network.
@@ -102,19 +102,17 @@
             - Instance A - VPCA connected with Intance C - VPCC
             - NW, Instance B and Instance C can't connec based on the existing connection. You need to create a VPC between B, and C to              make a communication.
       
- * Amazon VPC EndPoint
-    - There are many services of AWS that run outside VPC. 
-    - For example, S3 is regional service that doesn't run inside the VPC. 
-    - Now, if you want to connect to S3 using the VPC either via Internet or your corporate network!!!
+#### Amazon VPC EndPoint
+   - There are many services of AWS that run outside VPC. 
+   - For example, S3 is regional service that doesn't run inside the VPC. 
+   - Now, if you want to connect to S3 using the VPC either via Internet or your corporate network!!!
         - Here is where we need **VPC End POINT*
-     - VPC Endpoint gives you the ability to connect to VPC to S3 directly using private connection.
-     - Currently VPC Endpoint supports **S3 and DynamoDB**
-     - It's a virtual device scale horizontally and it redundant, providing high availability. 
+   - VPC Endpoint gives you the ability to connect to VPC to S3 directly using private connection.
+   - Currently VPC Endpoint supports **S3 and DynamoDB**
+   - It's a virtual device scale horizontally and it redundant, providing high availability. 
         
  
-* Questions 
- 
-   1. What is the difference between Security Group and NACL?
+#### Difference between Security Group and NACL?
   
   | Security Group | NACL|
   |-------------|-------|
