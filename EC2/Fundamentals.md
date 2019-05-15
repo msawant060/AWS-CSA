@@ -163,7 +163,7 @@ Source: https://www.whizlabs.com/aws-solutions-architect-associate
         2. All data moving between the volume and the instance
         3. All snapshots created from the volume
         4. All volumes created from those snapshots
-    
+
 #### 11. Security Group (totally 8 points)
    1. Protects the **instance** by applying a security wall of rules (like firwall)
    2. Controls the traffic coming IN and going OUT of the instance
@@ -181,8 +181,33 @@ Source: https://www.whizlabs.com/aws-solutions-architect-associate
    
    ![SecurityGroup.PNG](/SecurityGroup.PNG)
    
-  #### 12. AWS EC2 Key-pair
-   - Amazon EC2 uses Public-key cryptography to encrypt and decrypt the login information
-   - Public-key cryptography encrypt the password using public key, then the recipient or the user uses the private key to decrypt the        data.
+#### 12. AWS EC2 Key-pair
+  - Amazon EC2 uses Public-key cryptography to encrypt and decrypt the login information
+  - Public-key cryptography encrypt the password using public key, then the recipient or the user uses the private key to decrypt the        data.
+ 
+#### Instance Life Cycle
+
+   1. Launch Instance: 
+      - When you launch an instance immediately it goes to **pending** state
+      - AMI you specify is used to boot the instance during the launch 
+      - Once the instance is up and ready it goes to **running**
    
+   2. Start and Stop
+      - When you start an instane, if the instance has some health issues, it won't start
+      - If there is no issue, instane will get started
+      - When you stop an instance, it enters into **stopping** state and eventually it **stopped**
+      - EBS-backup instance: You can stop these instances
+      - Instance-store intance: You **CAN NOT** stop these instances.
+    
+   3. Reboot
+      - You can reboot instance that is eiter backed up by instance store or EBS-store 
+      - All data is saved in the reboot, even the instane store data won't get lost (**NEED TO CONFIRM THIS POINT**)
+   
+   4. Termination
+      - If you don't need instance anymore you can terminate 
+      - Status will change to "shutting down" --> "terminated"
+      - You can either delete the EBS volume assosiated with the instance or save it
+            - The Amazon EBS volume supports the **Delete on termination** attribute 
+       - The default behaviour is **Delete the root volume and PRESERVE any other EBS Volume**
+      
    
