@@ -138,4 +138,16 @@
   - You **CAN NOT** change the default network interface of an instance, which is also known as a primary network interface (eth0)
   - Adding EIN doesn't make any differenece in the network instance bandwidth 
 
-   
+ #### Elastic IP Address (EIP)
+  - An Elastic IP address is a public IPv4 address, which is reachable from the internet
+  - An Elastic IP address is for use in a specific region only
+  - Why do we need this?
+      - With EIP, you can mask the failure of an instance or software by rapidly remapping the address to another instance in your               account
+      - There are some cases, you need to respin new instance every day in this case, rather than issuing new IP everytime, EIP helps           users to use one static IP always
+   - The following are main 3 steps to use EIP
+      1. Allocate EIP from your account from console
+      2. Assosiate EIP with your intance or Network interface
+      3. Start using it.
+    - When you disassosiate an EIP and don't re-assosiate it with network interface or any instance, still it continue to remain in your account until you **explicitly release it**
+    - EIP is free when you're using it. However, when you disassosiate an EIP and don't re-assosiate it with anyting, you'll get charged. 
+ 
