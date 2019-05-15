@@ -111,7 +111,6 @@
    - Currently VPC Endpoint supports **S3 and DynamoDB**
    - It's a virtual device scale horizontally and it redundant, providing high availability. 
         
- 
 #### Difference between Security Group and NACL?
   
   | Security Group | NACL|
@@ -151,3 +150,20 @@
     - When you disassosiate an EIP and don't re-assosiate it with network interface or any instance, still it continue to remain in your account until you **explicitly release it**
     - EIP is free when you're using it. However, when you disassosiate an EIP and don't re-assosiate it with anyting, you'll get charged. 
  
+#### Dynamic Host Configuration Protocol (DHCP) Option sets
+  - This is used to specify host configuration for instance in your VPC
+      - including Default Domain Name and DNS
+  - Every VPC must have **ONLY ONE DHCP option set assigned to it.** 
+  - Once you create DHCP set you can't modify it
+ 
+#### Connection to VPC
+  - Virtual Private Gateway:
+      - This is the VPN concentrator on the Amazon side of the VPN connection. 
+      - It helps to connect the coporate data network with your VPC after updateing the route table 
+      - A virtual private gateway take cares of the Amazon Side of the VPN. 
+      - However, what about the data center side network (Your company side network out of VPC). 
+          - Customer Gateway solves that issue
+   - Customer Gateway:
+      - It's a physical device or software.
+      - It is the anchor on your side of that connection.
+      
