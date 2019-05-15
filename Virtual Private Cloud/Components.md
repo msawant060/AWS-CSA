@@ -123,4 +123,19 @@
   
    2. What is the difference between NAT Instance and NAT Gateway?
    
+#### Elastic Network Interface (ENI)
+  - It allows user to create one or more Network interface and attach to an EC2 instance. 
+  - As name suggested you can attach and detach anytime
+  - EIN has the following features:
+    1. A MAC address
+    2. One Public IPv4 address
+    3. One Public IPv6 address
+    4. One Primary PRivate IP4 address
+    5. One or more secondary private IP4
+    6. One elastic IP address (IPv4) per private IPv4 address
+    7. One or more Security Group
+    8. A source/destination check flag and description
+  - You **CAN NOT** change the default network interface of an instance, which is also known as a primary network interface (eth0)
+  - Adding EIN doesn't make any differenece in the network instance bandwidth 
+
    
