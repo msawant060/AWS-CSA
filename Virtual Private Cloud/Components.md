@@ -167,3 +167,23 @@
       - It's a physical device or software.
       - It is the anchor on your side of that connection.
       
+#### Connectivity Options for a VPC and your corporate data center
+  1. AWS Harware VPN
+  2. AWS Direct Connect: It provides a dedicated private connection between VPC and your corporate data center
+  3. VPN CloudHub: If you have mutiple data centers in remote locations, this option would be preferable 
+  4. Software VPN
+  
+  - Most of the enterprises stabilish a direct connection to an AWS network. 
+      - It gived bigger bandwidth 
+      - Bigger pipe
+      
+#### VPC Flow Logs
+  - It helps to capture the information about
+      - IP traffic going to and from network interface in your VPC
+  - Flow Log Data is stored using Amazon Cloud Watch Logs
+  - Flow logs can be created for
+      - Network Interface
+      - Subnets
+      -VPCs
+  
+  
