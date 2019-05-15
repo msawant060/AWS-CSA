@@ -21,7 +21,7 @@
   - **VPC are region specific. For mutiple regions,, create different VPCs.**
 
 * Route Table
-  - It's a table consisting of certain rules known as routes, that determines where the traffic is directed. 
+  - It's a table conscontains a set of rules known as routes, that determines where the traffic is directed. 
   - Every subnet should have a route table. 
   - More than one subnet can have a same route table. 
   - Whenever you create a subnet, it assosiated with a main route table, when you don't assosiated with the specific route table. 
