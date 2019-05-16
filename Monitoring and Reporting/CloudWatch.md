@@ -83,6 +83,10 @@
   - Alarms
      - Set Alams for EC2 actions
         - Reboot, ..etc
+     - 3 Type of Actions from Alarms
+       - OK: The metric is within the defined threshold
+       - ALARM: The metric is outside the defined threshold
+       - INSUFFICENT: Alarm has just started. The metric is not available, or not enough data is available for the metric to determine                         the alarm
   - CloudWatch Events
       - Event 
         - It indicates the changes in your environment: Ex: EC2 instance state from Pending to Running
