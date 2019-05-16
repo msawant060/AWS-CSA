@@ -29,7 +29,7 @@
    - Step 4: Analyze: 
        - Finally it helps to Analze the data
 
-### Step 1: Collect - Metrics (Default & Custom)
+### Step 1: Collecting - Metrics (Default & Custom)
   - Default Metrics: EC2 Metrics
       - CPU
           - CPU Utilization
@@ -63,7 +63,7 @@
    - EBS Metrics 
         - EBS ReadOPS, EBS WriteOps, EBS ReadBytes, EBS WriteBytes, EBSIOBalance%, EBSBytesBalance%
         
-### Step 1: Monitoring 
+### Step 2: Monitoring (Basic and Detailed)
    - Type of Monitoring
        - Basic Monitoring
          - **5 minutes period**
@@ -78,6 +78,16 @@
    - Alarms
       - Perfor one or more actions based on the value of the metric relative to threashold over number of period
       - You can set alarms in the Dsahboard to view them as well. 
-      
-        
+
+### Step 3: Acting (Alams and Events)
+  - Alarms
+     - Set Alams for EC2 actions
+        - Reboot, ..etc
+  - CloudWatch Events
+     - Event 
+       - 
+     - Targets
+        - 
+   
+       
       
