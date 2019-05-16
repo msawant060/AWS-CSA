@@ -88,6 +88,9 @@
         - It indicates the changes in your environment: Ex: EC2 instance state from Pending to Running
       - Targets
         - A target to process the event. It could be EC2, or Lamda function
+      - Rules
+        - Rules mathces incoming events and routes them to targets for processing
+        - A single rule can route to multiple targets, all of which are parallel
      
    
        
