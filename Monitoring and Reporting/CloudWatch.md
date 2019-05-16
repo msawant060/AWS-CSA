@@ -72,6 +72,11 @@
        - 1 minute period
        - Must be Enable at the **Instance level
        - Not Free
-        
+   - Dashboards
+      - Used to monitor your resources
+   - Alarms
+      - Perfor one or more actions based on the value of the metric relative to threashold over number of period
+      - You can set alarms in the Dsahboard to view them as well. 
+      
         
       
