@@ -64,14 +64,14 @@
         - EBS ReadOPS, EBS WriteOps, EBS ReadBytes, EBS WriteBytes, EBSIOBalance%, EBSBytesBalance%
         
 ### Step 1: Monitoring 
-    - Basic Monitoring
-        - 5 minutes period
-        - Free of charge
-        - Enable by Default
-    - Detailed Monitoring
-        - 1 minute period
-        - Must be Enable at the **Instance level
-        - Not Free
+   - Basic Monitoring
+       - 5 minutes period
+       - Free of charge
+       - Enable by Default
+   - Detailed Monitoring
+       - 1 minute period
+       - Must be Enable at the **Instance level
+       - Not Free
         
         
       
