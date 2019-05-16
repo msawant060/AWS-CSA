@@ -1,4 +1,8 @@
-# Server Access Logging
+Source URL: https://www.whizlabs.com/aws-solutions-architect-associate
+
+## Logging
+
+### Server Access Logging
   - Logging happens at the Server Level
   - When you enable this to an S3 bucket, this provides the detailed records for the requests that are made to a bucket. (Source bucket)
   - Security and Autiting are the use of this service
@@ -19,7 +23,7 @@
    - Server access log records are deliverd on a "best effort basis"
       - Most records are delivered within a few hours of the time that they are recorded but timeliness of server logging is not guranteed. 
    
-  # Object level Logging
+### Object level Logging
    - Logging happens at the Object Level
    - When you enable this to an S3 bucket, and when a user or application tried to access an object in this bucket, if a CloudTrail trail      is setup for this S3 bucket Data Event, the logs will be created in the target bucket.
    -  ![ObjectLevelLoggins.PNG](/ObjectLevelLoggins.PNG)
