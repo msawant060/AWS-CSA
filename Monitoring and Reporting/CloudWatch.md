@@ -84,10 +84,11 @@
      - Set Alams for EC2 actions
         - Reboot, ..etc
   - CloudWatch Events
-     - Event 
-       - 
-     - Targets
-        - 
+      - Event 
+        - It indicates the changes in your environment: Ex: EC2 instance state from Pending to Running
+      - Targets
+        - A target to process the event. It could be EC2, or Lamda function
+     
    
        
       
