@@ -23,10 +23,7 @@
         - Transfer Acceleration
  12. Amazon S3 Transfer Acceleration
         - Why do we need this?
-          - It enables
-           - Fast, 
-           - Easy, and 
-           - Secure transfers of files over long distances between your end users and an S3 bucket
+          - It enables Fast,  Easy, and Secure transfers of files over long distances between your end users and an S3 bucket
           - Transfer Acceleration takes advantage of Amazon CloudFront’s globally distributed edge locations.  
           - AS the data arrives at an edge location, data is routed to Amazon S3 over an optimized network path
 
