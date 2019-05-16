@@ -1,6 +1,6 @@
 # Basic Concepts
 
-### Overview of S3
+### Overview of S3 (12 points)
 
   1. S3 provides developers and IT teams with secure, highly-scalable object storage 
   2. Store and retrieve **any amount of data from anywhere** on the web.
@@ -21,13 +21,14 @@
         - Data Transfer Price 
         - Storage Management PRicing
         - Transfer Acceleration
- 12.Amazon S3 Transfer Acceleration
-    * It enables:
-        - Fast, 
-        - Easy, and 
-        - Secure transfers of files over long distances between your end users and an S3 bucket
-    * Transfer Acceleration takes advantage of Amazon CloudFront’s globally distributed edge locations. 
-    * AS the data arrives at an edge location, data is routed to Amazon S3 over an optimized network path
+ 12. Amazon S3 Transfer Acceleration
+        - Why do we need this?
+          - It enables
+           - Fast, 
+           - Easy, and 
+           - Secure transfers of files over long distances between your end users and an S3 bucket
+          - Transfer Acceleration takes advantage of Amazon CloudFront’s globally distributed edge locations.  
+          - AS the data arrives at an edge location, data is routed to Amazon S3 over an optimized network path
 
 ### Benifits of S3
 
