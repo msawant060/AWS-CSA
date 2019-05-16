@@ -11,16 +11,16 @@
   8. S3 is a **Universal namespace**. This is, **name must be unique globally**. 
   9. When you upload a file to S3, you will receive a **HTTP 200 code if the upload was successful**
   10. S3 Storage Classes/Tires:
-          - Amazon S3 Standard  : Durable, immediately available, frequent accessed 
-          - Amazon S3 Standard Infrequent Access (IA) : Durable,  immediately available, infrequent accessed 
-          - Amazon S3 One Zone Infrequent Access - IA (one_Zone IA): Even cheaper than IA, but only in one availability zone 
-          - Glacier - Archived data, where you can wait 3 - 5 hours before accessing 
+       - Amazon S3 Standard  : Durable, immediately available, frequent accessed 
+       - Amazon S3 Standard Infrequent Access (IA) : Durable,  immediately available, infrequent accessed 
+       - Amazon S3 One Zone Infrequent Access - IA (one_Zone IA): Even cheaper than IA, but only in one availability zone 
+       - Glacier - Archived data, where you can wait 3 - 5 hours before accessing 
   11. S3 Chrages depends on
-          - Storage
-          - Request
-          - Data Transfer Price 
-          - Storage Management PRicing
-          - Transfer Acceleration
+        - Storage
+        - Request
+        - Data Transfer Price 
+        - Storage Management PRicing
+        - Transfer Acceleration
  12.Amazon S3 Transfer Acceleration
     * It enables:
         - Fast, 
