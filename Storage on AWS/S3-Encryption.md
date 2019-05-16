@@ -1,6 +1,8 @@
 # S3-Encryption
 
- - Two Options: Server Side Encryption and Client Side Encryption
+ - Two Options: 
+   - Server Side Encryption and 
+   - Client Side Encryption
  
  - Server Side Encryption:
       - The S3 server is in charge of the encryption and decryption
