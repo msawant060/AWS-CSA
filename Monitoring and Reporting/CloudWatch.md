@@ -95,3 +95,6 @@
  ### Step 4: Analyze      
    - Process and Analyze the CloudWatch logs events through Kinesis and Lambdas 
  
+### NOTE: 
+  - CloudWatch Dashboards are global, you can view resource metrics from different regions
+  
