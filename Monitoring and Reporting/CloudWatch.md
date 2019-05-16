@@ -1,3 +1,5 @@
+Reference and credit goes to: https://www.whizlabs.com/aws-solutions-architect-associate
+
 # CloudWatch
 
 ### Amazon CloudWatch helps to monitor and reporting
