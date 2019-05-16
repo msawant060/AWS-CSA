@@ -12,7 +12,7 @@
       - Total Objects Stored
       - Request Metrics
   * Monotoring AWS Billing
-      - Notfy when the autual usage reaches estimated usage
+      - Notify when the autual usage reaches estimated usage
   * Get a unified view of health check
       
 ### How Amazon CloudWatch works?
