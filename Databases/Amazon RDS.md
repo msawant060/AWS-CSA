@@ -44,7 +44,7 @@
      - Backup are delted when you delete the DB instace. However, **RDS gives a chance to take a final backup beore deleting** the database      instance. Which can be useed later to restore the database 
      - **DescribeDBInstance** API retunrs that last restorables time for the DB instance, which is typically within the last 5 minutes. 
    
-  - Manual backup/ DB Sanpshots 
+ - Manual backup/ DB Sanpshots 
     - Created manually
     - Incremental database backup. Teva, try to remember what this is?
     - These are NOT delted when you delete the dataase instance
