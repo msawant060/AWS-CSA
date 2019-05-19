@@ -57,6 +57,6 @@
      ![PrivateSubnetAssosiation.PNG](/PrivateSubnetAssosiation.PNG)
      
       - 5.5 Edit the route table to make a connection to NAT Gateway
-      ![AddNAtGateWayPAth](/PAddNAtGateWayPAth)
+      ![AddNAtGateWayPAth.PNG](/AddNAtGateWayPAth.PNG)
   
    
