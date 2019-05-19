@@ -29,5 +29,24 @@
     - Data transfer
     - Proviosned IOPS
  
- 
+ #### Backup
+- Amazon RDS provides 2 ways of backups
+  - Automated backups
+  - Manual backup/ DB Sanpshots
+- Automated Backups
+     - Amazon RDS Created automated storage volumes snapshots of entire DB instance to point-in-time revovery 
+     - Backups retained as per the **backup retiontion period**. Default 7 days, maximum 35 days.
+     - IO suspension:
+        - Backing up from a single AZ-DB instance results in a brief IO suspension.(Can be few seconds, or minutes depending on the size of DB)
+        - Mutiple AZ instances are not affectd by this I/O suspension during the backup since the backup is taken on Standby
+     - Backup Window. This is the duration taken while backing up the database. (By default 30 minutes)
+        - If the backup duration is higer than backup window, still the back up will conitinue until it's done.
+     - Backup are delted when you delete the DB instace. However, **RDS gives a chance to take a final backup beore deleting** the database      instance. Which can be useed later to restore the database 
+     - **DescribeDBInstance** API retunrs that last restorables time for the DB instance, which is typically within the last 5 minutes. 
+   
+  - Manual backup/ DB Sanpshots 
+    - Created manually
+    - Incremental database backup. Teva, try to remember what this is?
+    - These are NOT delted when you delete the dataase instance
+    
  
