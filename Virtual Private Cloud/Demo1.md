@@ -2,9 +2,11 @@
 
 1. Create a VPC called Teva_VPC
   1.1 Region: virginia
-  1.2 IP:10.0.0.0/16
+  1.2 IP:10.0.0.0/16 
   
-2. Create 4 subnets 
+  ![Step1.PNG](/Step1.PNG)
+  
+  2. Create 4 subnets 
   2.1 Public Subnet - Public_A
     2.1.1 IP Range: 10.0.0.0/28
     2.1.2 AZ: East a
