@@ -1,9 +1,10 @@
-### Application Load Balancer
+### Application Load Balancer (ALB)
 
 ##### What is it?
   - This load balancer is specially designed for web applications with HTTP and HTTPS traffic. 
   - Distributes the traffic to the registerd targets such as EC2 instances, containers, IP addresses 
   - such that none of them gets overloaded 
+  - An Application Load Balancer functions at the application layer, the seventh layer of the Open Systems Interconnection (OSI) model
   
 ##### Why to use an Application Load Balancer?
   - Hight Availability and Fault Tollerance 
@@ -44,8 +45,8 @@
           - Actions (one/more)
           - Conditions
                 - Host Based (Optinal)
-                - Past Based (Optional)      
-         - Health Checks:
+                - Past Based (Optional)                   
+   - Health Checks:
     
       - Monitor the health of the registerd targets, so that LB can send the request to health targets
  
