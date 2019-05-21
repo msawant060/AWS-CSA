@@ -8,14 +8,16 @@ Source URL: https://www.whizlabs.com/aws-solutions-architect-associate/
  
  - Server Side Encryption:
       - The S3 server is in charge of the encryption and decryption
+      - This uses Advanced Encryption Standard (AES) - 256. 
       
  - Client Side Encryption:
-      - The customer show is in charge of that encryption and decryption
+      - The customer is in charge of that encryption and decryption
   
  - Server Side Encryption provide 3 options:
-    1. SSE - S3: Here S3 manages the data encryption key and the master key
-    2. SSE - KMS: Here KMS creates and manages the data encryption key and the master key
-    3. SSE - C: Here S3 manages the keys that are provided by the user.
+    1. SSE - S3 Keymanagement: Amazon S3 will encrypt your data at rest and managed the encryption keys for you
+    2. SSE - Amazon Key Management Service (KMS): Amazon S3 will encrypt your data at rest and using keys you manage in AWS KMS,
+                                                  This approch allows you to see who used the keys based on audit trail. It provides                                                         additional security
+    3. SSE - Customer Provided Key: Amazon S3 will encrypt your data at rest and using the key you provide.
     
   - Client Side Encryption provide 2 options:
     1. CSE with KMS-Managed Customer Master Key
