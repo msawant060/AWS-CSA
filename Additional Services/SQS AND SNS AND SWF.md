@@ -17,6 +17,11 @@
 | At-Least-Once Delivery: A message is delivered at least once, but occasionally more than one copy of a message is delivered | Exactly-Once Processing: A message is delivered once and remains available until a consumer processes and deletes it. **Duplicates aren't introduced into the queue.**| 
 | Best-Effort Ordering: Occasionally, messages might be delivered in an order different from which they were sent.| First-In-First-Out Delivery: The order in which messages are sent and received is strictly preserved (i.e. First-In-First-Out).| 
 
+- SQS is pull-based, not pushed based
+- Messages are 256Kb in size
+- Messages can be kept in the queue from 1 minute to 14 days
+- Default retention period is 4 days
+
 ### Simple Notification Service
 
 * What is SNS? 
