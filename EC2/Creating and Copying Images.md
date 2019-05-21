@@ -6,4 +6,7 @@
 4. AMI's are regions Specific. (Check this out)
 5. Copy AMI from one region to another region
 
-### NOTE: AWS does not copy launch permissions, user-defined tags, or Amazon S3 bucket permissions.
+### NOTE: 
+
+  - When you copy an EC2 instance image, AWS does not copy launch permissions, user-defined tags, or Amazon S3 bucket permissions.
+  - Cross-Account AMI Copy: You can share an AMI with another AWS account
