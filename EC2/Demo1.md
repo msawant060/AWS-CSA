@@ -1,4 +1,4 @@
-### Demo 1
+### Demo 1: Basic
 
 1. Create an EC2 instance 
 2. Create a new EBS volume and attach to it
