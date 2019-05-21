@@ -10,8 +10,12 @@ Resource: https://www.whizlabs.com/aws-solutions-architect-associate
       - Root Volume: General purpose SSD, Provisioned IOPS SSD, Magenetic HDD
       - Others: Throughput Optimized HDD, Cold HDD
   - One EC2 instance may ccontain more than one EBS. However, more than one EC2 instance can't share an EBS volume.
-  
+  - You can encrypt EBS volumes using Amazon EBS encryption feature
+  - AWS uses the Data Encryption with 256-bit Advanced Encryption Standard Algorithms (AES-256).
+  - Amazon EBS encryption uses AWS Key Management Service (AWS KMS) master keys when creating the encrypted volumes and any snapshots         created from those. 
 
 #### What is Snapshot?
   - **A point-in-time** backup of the data that is stored on the EBS Volume
-  
+  - Data on EBS volume can be backed via snapshots (Stored on S3 for redundancy)
+  - Data can be backed up even when volume is attached to running instance 
+  - **snapshots are incremental backups**
