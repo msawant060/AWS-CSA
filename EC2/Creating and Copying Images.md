@@ -6,3 +6,4 @@
 4. AMI's are regions Specific. (Check this out)
 5. Copy AMI from one region to another region
 
+### NOTE: AWS does not copy launch permissions, user-defined tags, or Amazon S3 bucket permissions.
