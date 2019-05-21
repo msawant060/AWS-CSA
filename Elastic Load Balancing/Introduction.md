@@ -22,6 +22,12 @@
    and IP addresses, in multiple Availability Zones.
    
 - It uses health checks to detect which instances are healthy and directs traffic only across those instances
+
+- What is Cross-Zone Load Balancing
+  - With cross-zone load balancing, each load balancer node for your Classic Load Balancer distributes requests evenly across the           registered instances in **all enabled Availability Zones**. 
+  - If cross-zone load balancing is disabled, each load balancer node distributes requests evenly across the registered instances in         **its Availability Zone only**
+  - Cross-Zone Load Balancing is **ALWAYS ENABLED** for Application Load Balancer. 
+  - Cross-Zone Load Balancing is **DISABLED by DEFAULT** for Network Load Balancer.
  
 ## Types of Elastic Load Balancers (ELB)
  
