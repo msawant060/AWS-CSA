@@ -93,7 +93,7 @@ Source: https://www.whizlabs.com/aws-solutions-architect-associate
       
    - The following are the main 3 types
       - 1. General Purpose SSD (SSD: Solid State Drive)
-      - 2. Provisioned IPOS SSD (SSD: Solid State Drive)
+      - 2. Provisioned IOPS SSD (SSD: Solid State Drive)
       - 3. Magnetic HDD (HDD: Hard Disk Drive)
  
 ##### Difference between Storage IOPS and Storage Throughput (Source: https://storageservers.wordpress.com/2015/11/10/difference-between-storage-iops-and-storage-throughput)
@@ -128,7 +128,7 @@ Source: https://www.whizlabs.com/aws-solutions-architect-associate
     - Use for appliations that needs Database workload is high
     
  * Magnetic HDD (Standard)
-    - Used for: Where data is accessed infrequently, and applications where the lowest storage cost is importan.
+    - Used for: Where data is accessed infrequently, and applications where the lowest storage cost is important.
     - It can be used as **root volume of EC2 instance**
     - Older generation volumes are backend by magnetic drives
     - Baseline performance approximately 100 IOPS
@@ -165,7 +165,7 @@ Source: https://www.whizlabs.com/aws-solutions-architect-associate
         4. All volumes created from those snapshots
 
 #### 11. Security Group (totally 8 points)
-   1. Protects the **instance** by applying a security wall of rules (like firwall)
+   1. Protects the **instance** by applying a security wall of rules (like firewall)
    2. Controls the traffic coming IN and going OUT of the instance
    3. Following are some rules you can set for the security group
        - Type of Request : TCP, UDP, HTTP, HTPS, Custom
