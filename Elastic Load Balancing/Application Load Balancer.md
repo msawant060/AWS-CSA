@@ -59,5 +59,6 @@
       - Target Group: it is used to route requests to one or more registed targets 
       
      
-
+#### NOTE:
+   - SSL OFfload: To use the HTTPS you must deploy SSL certificate on ALB itself.    
     
