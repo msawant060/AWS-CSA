@@ -14,14 +14,23 @@
  * CloudFront works seamlessly with services:
     - including AWS Shield for DDoS mitigation, 
     - Amazon S3, 
-    - Elastic Load Balancing or A
-    - mazon EC2 as origins for your applications, 
-    - and Lambda@Edge to run custom code closer to customers’ users and to customize the user experience
+    - Elastic Load Balancing or Amazon EC2 as origins for your applications, 
+    - Lambda@Edge to run custom code closer to customers’ users and to customize the user experience
     
   * If you use AWS origins such as Amazon S3, Amazon EC2 or Elastic Load Balancing, 
     you don’t pay for any data transferred between these services and CloudFront.
     
   * The Amazon CloudFront content delivery network (CDN) is massively scaled and **globally distributed**
   
+  * Amazon CloudFront Origin Domains:
+    - Amazon S3 bucket
+    - Web Server (Elastic Load Balancers)
+    - AWS Media Package endpoint
+    - AWS MediaStoreContainer endpoint
+    
+    
+    - 
+  
   # Question. Teva, what's the difference between CloudFront and ElasticCache? 
   https://acloud.guru/forums/aws-certified-solutions-architect-associate/discussion/-KbKW7V5i1NIZ6n9S_TK/what_is_the_difference_between
+
