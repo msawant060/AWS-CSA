@@ -67,11 +67,11 @@ Source: https://www.whizlabs.com/aws-solutions-architect-associate
          * Spot Instance Pool: A set of unused EC2 instances with the same istance type, OS, AZ. Your instance will be one of these
          * Spot Price: Current houlry price of the spot instance
          * Spot Instance Request: Your bid or the price that you are willing to pay for Spot Instance
-         * Spot Fleet: Basically, you specify the criteria of the instance and then the pot fleet selects the Spot Instance pool that               meet your needs and launch Spot Instances.
+         * Spot Fleet: Basically, you specify the criteria of the instance and then the spot fleet selects the Spot Instance pool that               meet your needs and launch Spot Instances.
          * Spot Instance Interruption: Amazon EC2 terminates, stops, or hibrenates your Spot Instance when the Spot price exceeds the              maximum price for your request or capacity is no longer available 
          
    5. Dedicated Hosts
-        - Pay for a physical host that is fully dedicated to running your instances, 
+        - Pay for a **physical host that is fully dedicated** to running your instances, 
         - and bring your existing per-socket, per-core, or per-VM software licenses to reduce costs.
           
    6. Dedicated Instances 
