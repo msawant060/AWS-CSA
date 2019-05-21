@@ -42,8 +42,7 @@
  ### 2. Application Load Balancer (ALB)
     
    - This load balancer is specially designed for web applications with HTTP and HTTPS traffic.
-   - There is a networking model called the OSI Model (Open Systems Interconnection) that is used to explain how computer networks work. 
-   - This model has 7 layers and the top layer is the Application Layer.
+   - Application Load Balancerfunction at 7th layer of OSI model. (7th layer is Application Layer)
    - This load balancer works at this Application Layer, hence the name.
    - It also provides advanced routing features such as:
        - Host-based
@@ -66,11 +65,11 @@
    - So again a single ALB is enough to handle this for you.
      
 ### 3. Network Load Balancer (NLB)
-   - This load balancer is specially designed for TCP/IP traffic.
-   - This load balancer operates at the Network layer of the OSI model, hence the name.
-   - Suppose your company’s website is running on four m4-xlarge instances and you are using an ALB to distribute the traffic among them.
+   - This load balancer is specially designed for TCP traffic.
+   - A Network Load Balancer functions at the fourth layer of the Open Systems Interconnection (OSI) model.
+   - Suppose your company’s website is running on four m4-xlarge instances and you are using an ALB to distribute the traffic among         them.
    - Now your company launched a new product today which got viral and your website starts to get millions of requests per second.
    - In this case, the ALB may not be able to handle the sudden spike in traffic.
-   - This is where the NLB really shines. It has the capability to handle a sudden spike in traffic since it works at the connection level.
+   - This is where the NLB really shines. It has the capability to handle a sudden spike in traffic since it works at the connection         level.
    - It also provides support for static IPs.
    
