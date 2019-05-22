@@ -67,7 +67,7 @@
   - USer can create Error Log, General Log, Show query Log and to publish to Amazon CloudWatch Logs
       - **User needs to have RDS Service Linked Role** to do that.
    
- #### High Availability via Muti-AZ
+ #### High Availability via Multi-AZ
   - high Avaialbity is achieve via Multizone-AZ  
   - RDS mater database - User always and only connect to it until the master is down
   - RDS Statndby Database - when master is down this guy get calls from client
@@ -79,5 +79,6 @@
    - If user wanted to Scale out - Via Read replica 
    - Primry Instance to Read Replica instance the data is copied via **Asynchronous Replication**
    - Primary Instance: Main database engine 
-   - Read Replica: Read only copy of data. - User access this to read data also, this can be usefu in OLAP queries 
+   - Read Replica: Read only copy of data. - User access this to read data also, this can be usefu in OLAP queries
+   - you can create a ReadReplica from another Read Replica.
      
