@@ -80,5 +80,6 @@
    - Primry Instance to Read Replica instance the data is copied via **Asynchronous Replication**
    - Primary Instance: Main database engine 
    - Read Replica: Read only copy of data. - User access this to read data also, this can be usefu in OLAP queries
-   - you can create a ReadReplica from another Read Replica.
+   - you can create a ReadReplica from another Read Replica
+   - You can have it in multi region
      
