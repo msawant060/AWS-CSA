@@ -68,6 +68,16 @@
       - **User needs to have RDS Service Linked Role** to do that.
    
  #### High Availability via Muti-AZ
-  - RDS mater database 
-  - RDS Statndby Database
-  - Between master and standby the replication is done via **Synchronous Replication**
+  - high Avaialbity is achieve via Multizone-AZ  
+  - RDS mater database - User always and only connect to it until the master is down
+  - RDS Statndby Database - when master is down this guy get calls from client
+  - Between master and standby the data replication is done via **Synchronous Replication**
+  
+  #### Replication / Read Replica
+   - High Scalablity is achieve via Read Replica
+   - If user wanted to Scale up - Changing to larger instance type
+   - If user wanted to Scale out - Via Read replica 
+   - Primry Instance to Read Replica instance the data is copied via **Asynchronous Replication**
+   - Primary Instance: Main database engine 
+   - Read Replica: Read only copy of data. - User access this to read data also, this can be usefu in OLAP queries 
+     
