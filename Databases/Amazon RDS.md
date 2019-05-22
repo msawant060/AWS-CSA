@@ -67,3 +67,7 @@
   - USer can create Error Log, General Log, Show query Log and to publish to Amazon CloudWatch Logs
       - **User needs to have RDS Service Linked Role** to do that.
    
+ #### High Availability via Muti-AZ
+  - RDS mater database 
+  - RDS Statndby Database
+  - Between master and standby the replication is done via **Synchronous Replication**
