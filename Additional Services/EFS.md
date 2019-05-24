@@ -18,7 +18,7 @@
       - Encryption in transit:
             - Teva, how do you do it? 
       - Encryption at rest: 
-            - You can enable encryption at rest **ONLY when creating an Amazon EFS file system** 
+            - You can enable encryption of data at rest **ONLY when creating an Amazon EFS file system** 
             - If you do, all your data and metadata is encrypted
   - With Amazon EFS, you can choose from two performance modes and two throughput modes:
   - Performance Modes
