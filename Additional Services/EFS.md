@@ -16,7 +16,7 @@
   - It allows massively parallel access from Amazon EC2 instances to your data.
   - Amazon EFS supports two forms of encryption for file systems
       - Encryption in transit:
-            - You can enable encryption in transit when you mount the file system.
+            - Teva, how do you do it? 
       - Encryption at rest: 
             - You can enable encryption at rest **ONLY when creating an Amazon EFS file system** 
             - If you do, all your data and metadata is encrypted
