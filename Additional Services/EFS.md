@@ -18,7 +18,7 @@
       - Encryption in transit:
             - You can enable encryption in transit when you mount the file system.
       - Encryption at rest: 
-            - You can enable encryption at rest when creating an Amazon EFS file system. 
+            - You can enable encryption at rest **ONLY when creating an Amazon EFS file system** 
             - If you do, all your data and metadata is encrypted
   - With Amazon EFS, you can choose from two performance modes and two throughput modes:
   - Performance Modes
