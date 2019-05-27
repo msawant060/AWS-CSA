@@ -95,14 +95,17 @@ Source: https://www.whizlabs.com/aws-solutions-architect-associate
       - 1. General Purpose SSD (SSD: Solid State Drive)
       - 2. Provisioned IOPS SSD (SSD: Solid State Drive)
       - 3. Magnetic HDD (HDD: Hard Disk Drive)
- 
-##### Difference between Storage IOPS and Storage Throughput (Source: https://storageservers.wordpress.com/2015/11/10/difference-between-storage-iops-and-storage-throughput)
+
+##### Terminologies. 
 
  - Throughput:
       - Data transfer speed in megabytes per second is often termed as throughput. 
       - Earlier, it was measured in Kilobytes. But now the standard has become megabytes.
  - IOPS:
       - The time taken for a storage system to perform an Input/Output operation per second from start to finish constitutes IOPS.
+      
+ - Lateny:
+     - Te amount of time taken for each I/O operations. Measures in milliseconds
 
 ##### Difference between Solid State Drive and Hard Disk Drive
 
@@ -211,3 +214,4 @@ Source: https://www.whizlabs.com/aws-solutions-architect-associate
        - The default behaviour is **Delete the root volume and PRESERVE any other EBS Volume**
       
    
+##### Difference between Storage IOPS and Storage Throughput (Source: https://storageservers.wordpress.com/2015/11/10/difference-between-storage-iops-and-storage-throughput)
