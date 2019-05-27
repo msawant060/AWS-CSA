@@ -179,8 +179,7 @@ Source: https://www.whizlabs.com/aws-solutions-architect-associate
    4. All **incoming traffic is denied by security group**
    5. Security Group Rules are awlays **Permissive** You can **only define allow rules**. You CAN NOT specify any **"DENY RULE"**
    6. Security Group Rules are awlays**Stateful** : If you ALLOW traffic of a perticular type from a source into your instance, the           outgoing traffic is ALLOWED automatically
-   7. It works on Instance level and you can have multiple security group under one security group
-   8. You cannot block specific IP addresses using Security Groups, use Network Access Control Lists.
+   7. You cannot block specific IP addresses using Security Groups, use Network Access Control Lists. However, you can block your own IP also IP addresses can be specified CIDAR blok. 
    
    ![SecurityGroup.PNG](/SecurityGroup.PNG)
    
